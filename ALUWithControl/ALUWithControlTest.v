@@ -54,15 +54,13 @@ module ALUWithControlTest;
 		#100;
 		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0001;
 		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0011;
-		#100;
 		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0010;
-		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0100;
 		#100;
 		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0110;
 		#100;
 		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0111;
+		#100;
+		a = 4'b0011;		b = 4'b0101;		ALUctl = 4'b0111;
 		#100;
 	end
       
