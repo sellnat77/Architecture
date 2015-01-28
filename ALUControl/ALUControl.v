@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module ALUControl(
     input [3:0] FuncCode,
-    input [1:0] ALUop,
+    input [1:0] ALUOp,
     output reg [3:0] ALUctl
     );
 	 
-	 always @(FuncCode,ALUop)
+	 always @(FuncCode,ALUOp)
 	 begin
-		case({FuncCode})
+		case(FuncCode)
 		
 			4'b0000: ALUctl = 4'b0010;
 			4'b0010: ALUctl = 4'b0110;

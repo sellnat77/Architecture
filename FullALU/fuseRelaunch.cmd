@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Russell/git/Architecture/FullALU/FullALUTest_isim_beh.exe" -prj "C:/Users/Russell/git/Architecture/FullALU/FullALUTest_beh.prj" "work.FullALUTest" "work.glbl" 

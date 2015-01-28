@@ -1,0 +1,5 @@
+verilog work "../ALUWithControl/ALUWithControl.v"
+verilog work "../ALUControl/ALUControl.v"
+verilog work "FullALU.v"
+verilog work "FullALUTest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

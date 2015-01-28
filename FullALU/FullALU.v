@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    14:44:04 01/26/2015 
+// Create Date:    15:16:31 01/28/2015 
 // Design Name: 
-// Module Name:    ALUWithControl 
+// Module Name:    FullALU 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,26 +18,18 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALUWithControl(
+module FullALU(
+    input [1:0] ALUOp,
+    input [3:0] FuncCode,
     input [31:0] A,
     input [31:0] B,
-    input [3:0] ALUctl,
-    output reg [31:0] ALUOut,
-    output reg [1:0] Zero
+    output [31:0] ALUOut,
+    output Zero,
+	 wire [3:0] ALUctl
     );
 	 
-	 always @(A,B,ALUctl)
-	 begin
-		case(ALUctl)
-			4'b0000: ALUOut = A & B;
-			4'b0001: ALUOut = A | B;
-			4'b0010: ALUOut = A + B;
-			4'b0110: ALUOut = A - B;
-			4'b0111: ALUOut = A < B ? 1:0;
-		endcase
-		if (ALUOut == 0) Zero = 1;
-		else Zero = 0;
-	end
+	 ALUControl ALUControl(ALUOp,FuncCode,ALUctl);
+	 ALUWithControl ALUWithControl(AULctl,A,B,ALUOut,Zero);
 
 
 endmodule
