@@ -22,16 +22,14 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Russell/git/Architecture/ALUControl/ALUControl.v";
-static unsigned int ng1[] = {32U, 0U};
+static unsigned int ng1[] = {0U, 0U};
 static unsigned int ng2[] = {2U, 0U};
-static unsigned int ng3[] = {34U, 0U};
-static unsigned int ng4[] = {6U, 0U};
-static unsigned int ng5[] = {36U, 0U};
-static unsigned int ng6[] = {0U, 0U};
-static unsigned int ng7[] = {37U, 0U};
-static unsigned int ng8[] = {1U, 0U};
-static unsigned int ng9[] = {42U, 0U};
-static unsigned int ng10[] = {7U, 0U};
+static unsigned int ng3[] = {6U, 0U};
+static unsigned int ng4[] = {4U, 0U};
+static unsigned int ng5[] = {5U, 0U};
+static unsigned int ng6[] = {1U, 0U};
+static unsigned int ng7[] = {10U, 0U};
+static unsigned int ng8[] = {7U, 0U};
 
 
 
@@ -67,30 +65,30 @@ LAB4:    xsi_set_current_line(28, ng0);
 LAB5:    xsi_set_current_line(29, ng0);
     t5 = (t0 + 1048U);
     t6 = *((char **)t5);
-    xsi_vlogtype_concat(t4, 6, 6, 1U, t6, 6);
+    xsi_vlogtype_concat(t4, 4, 4, 1U, t6, 4);
 
 LAB6:    t5 = ((char*)((ng1)));
-    t7 = xsi_vlog_unsigned_case_compare(t4, 6, t5, 6);
+    t7 = xsi_vlog_unsigned_case_compare(t4, 4, t5, 4);
     if (t7 == 1)
         goto LAB7;
 
-LAB8:    t2 = ((char*)((ng3)));
-    t7 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+LAB8:    t2 = ((char*)((ng2)));
+    t7 = xsi_vlog_unsigned_case_compare(t4, 4, t2, 4);
     if (t7 == 1)
         goto LAB9;
 
-LAB10:    t2 = ((char*)((ng5)));
-    t7 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+LAB10:    t2 = ((char*)((ng4)));
+    t7 = xsi_vlog_unsigned_case_compare(t4, 4, t2, 4);
     if (t7 == 1)
         goto LAB11;
 
-LAB12:    t2 = ((char*)((ng7)));
-    t7 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+LAB12:    t2 = ((char*)((ng5)));
+    t7 = xsi_vlog_unsigned_case_compare(t4, 4, t2, 4);
     if (t7 == 1)
         goto LAB13;
 
-LAB14:    t2 = ((char*)((ng9)));
-    t7 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+LAB14:    t2 = ((char*)((ng7)));
+    t7 = xsi_vlog_unsigned_case_compare(t4, 4, t2, 4);
     if (t7 == 1)
         goto LAB15;
 
@@ -104,25 +102,25 @@ LAB7:    xsi_set_current_line(31, ng0);
     goto LAB17;
 
 LAB9:    xsi_set_current_line(32, ng0);
-    t3 = ((char*)((ng4)));
+    t3 = ((char*)((ng3)));
     t5 = (t0 + 1608);
     xsi_vlogvar_assign_value(t5, t3, 0, 0, 4);
     goto LAB17;
 
 LAB11:    xsi_set_current_line(33, ng0);
-    t3 = ((char*)((ng6)));
+    t3 = ((char*)((ng1)));
     t5 = (t0 + 1608);
     xsi_vlogvar_assign_value(t5, t3, 0, 0, 4);
     goto LAB17;
 
 LAB13:    xsi_set_current_line(34, ng0);
-    t3 = ((char*)((ng8)));
+    t3 = ((char*)((ng6)));
     t5 = (t0 + 1608);
     xsi_vlogvar_assign_value(t5, t3, 0, 0, 4);
     goto LAB17;
 
 LAB15:    xsi_set_current_line(35, ng0);
-    t3 = ((char*)((ng10)));
+    t3 = ((char*)((ng8)));
     t5 = (t0 + 1608);
     xsi_vlogvar_assign_value(t5, t3, 0, 0, 4);
     goto LAB17;

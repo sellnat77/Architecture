@@ -16,4 +16,4 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/Russell/git/Architecture/ALUControl/ALUctlTest_isim_beh.exe
 Fuse Memory Usage: 29108 KB
-Fuse CPU Usage: 452 ms
+Fuse CPU Usage: 468 ms

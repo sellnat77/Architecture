@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ALUControl(
-    input [5:0] FuncCode,
+    input [3:0] FuncCode,
     input [1:0] ALUop,
     output reg [3:0] ALUctl
     );
@@ -28,11 +28,11 @@ module ALUControl(
 	 begin
 		case({FuncCode})
 		
-			6'b100000: ALUctl = 4'b0010;
-			6'b100010: ALUctl = 4'b0110;
-			6'b100100: ALUctl = 4'b0000;
-			6'b100101: ALUctl = 4'b0001;
-			6'b101010: ALUctl = 4'b0111;
+			4'b0000: ALUctl = 4'b0010;
+			4'b0010: ALUctl = 4'b0110;
+			4'b0100: ALUctl = 4'b0000;
+			4'b0101: ALUctl = 4'b0001;
+			4'b1010: ALUctl = 4'b0111;
 			
 		endcase
 	end

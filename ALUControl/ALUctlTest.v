@@ -25,7 +25,7 @@
 module ALUctlTest;
 
 	// Inputs
-	reg [5:0] FuncCode;
+	reg [3:0] FuncCode;
 	reg [1:0] ALUop;
 
 	// Outputs
@@ -48,15 +48,15 @@ module ALUctlTest;
         
 		// Add stimulus here
 		
-		FuncCode = 6'b100000; 
+		FuncCode = 4'b0000; 
 		#100;
-		FuncCode = 6'b100010; 
+		FuncCode = 4'b0010; 
 		#100;
-		FuncCode = 6'b100100; 
+		FuncCode = 4'b0100; 
 		#100;
-		FuncCode = 6'b100101;  
+		FuncCode = 4'b0101;  
 		#100;
-		FuncCode = 6'b101010; 
+		FuncCode = 4'b1010; 
 		#100;
 	end
       
