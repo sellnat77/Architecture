@@ -50,17 +50,17 @@ module ALUWithControlTest;
 		#100;
         
 		// Add stimulus here
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0000;
+		a = 32'h55555555;		b = 32'haaaaaaaa;		ALUctl = 4'b0000;
 		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0001;
+		a = 32'h55555555;		b = 32'haaaaaaaa;		ALUctl = 4'b0001;
 		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0010;
+		a = 32'h55555555;		b = 32'haaaaaaaa;		ALUctl = 4'b0010;
 		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0110;
+		a = 32'h55555555;		b = 32'haaaaaaaa;		ALUctl = 4'b0110;
 		#100;
-		a = 4'b0101;		b = 4'b0011;		ALUctl = 4'b0111;
+		a = 32'h55555555;		b = 32'haaaaaaaa;		ALUctl = 4'b0111;
 		#100;
-		a = 4'b0011;		b = 4'b0101;		ALUctl = 4'b0111;
+		a = 32'haaaaaaaa;		b = 32'h55555555;		ALUctl = 4'b0111;
 		#100;
 	end
       

@@ -29,7 +29,7 @@ module ALUWithControl(
 	 always @(a,b,ALUctl)
 	 begin
 		case(ALUctl)
-			4'b0000: ALUOut = a && b;
+			4'b0000: ALUOut = a & b;
 			4'b0001: ALUOut = a | b;
 			4'b0010: ALUOut = a + b;
 			4'b0110: ALUOut = a - b;

@@ -2,14 +2,14 @@ Command line:
    ALUWithControlTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52628
+     -socket  52945
 
-Mon Jan 26 15:37:36 2015
+Wed Jan 28 08:53:16 2015
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 365.793 Meg
+ Current Memory Usage: 369.844 Meg
 
  Total Signals          : 18
  Total Nets             : 115
@@ -23,7 +23,7 @@ Total Line Count : 39
 
  Total Simulation Time: 0.046875 sec
 
- Current Memory Usage: 680.382 Meg
+ Current Memory Usage: 369.844 Meg
 
-Mon Jan 26 15:38:45 2015
+Wed Jan 28 08:53:43 2015
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-01-26T14:44:05</DateModified>
+  <DateModified>2015-01-28T08:42:39</DateModified>
   <ModuleName>ALUWithControl</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Russell/git/Architecture/ALUWithControl/iseconfig/ALUWithControl.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/ALUWithControl</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/ALUWithControl\</ImplementationReportsDirectory>
   <DateInitialized>2015-01-26T14:27:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

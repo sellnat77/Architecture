@@ -41,18 +41,19 @@
     </transform>
     <transform xil_pn:end_ts="1422315374" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1422315374">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422315452" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1422315452">
+    <transform xil_pn:end_ts="1422463991" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1422463991">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUWithControl.v"/>
       <outfile xil_pn:name="ALUWithControlTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1422315374" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5022774327625427754" xil_pn:start_ts="1422315374">
+    <transform xil_pn:end_ts="1422463489" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5022774327625427754" xil_pn:start_ts="1422463489">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422315374" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3365343914042345832" xil_pn:start_ts="1422315374">
+    <transform xil_pn:end_ts="1422463489" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3365343914042345832" xil_pn:start_ts="1422463489">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -60,15 +61,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422315452" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1422315452">
+    <transform xil_pn:end_ts="1422463991" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1422463991">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUWithControl.v"/>
       <outfile xil_pn:name="ALUWithControlTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1422315455" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8237171446189924851" xil_pn:start_ts="1422315452">
+    <transform xil_pn:end_ts="1422463994" xil_pn:in_ck="-4564657688434464634" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8237171446189924851" xil_pn:start_ts="1422463991">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALUWithControlTest_beh.prj"/>
       <outfile xil_pn:name="ALUWithControlTest_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -76,9 +79,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1422315455" xil_pn:in_ck="-4171403578110429988" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7702685126268244528" xil_pn:start_ts="1422315455">
+    <transform xil_pn:end_ts="1422463995" xil_pn:in_ck="-4171403578110429988" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7702685126268244528" xil_pn:start_ts="1422463994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALUWithControlTest_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

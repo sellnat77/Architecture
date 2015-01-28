@@ -23,8 +23,8 @@
 #endif
 static const char *ng0 = "C:/Users/Russell/git/Architecture/ALUWithControl/ALUWithControlTest.v";
 static int ng1[] = {0, 0};
-static unsigned int ng2[] = {5U, 0U};
-static unsigned int ng3[] = {3U, 0U};
+static unsigned int ng2[] = {1431655765U, 0U};
+static unsigned int ng3[] = {2863311530U, 0U};
 static unsigned int ng4[] = {0U, 0U};
 static unsigned int ng5[] = {1U, 0U};
 static unsigned int ng6[] = {2U, 0U};
