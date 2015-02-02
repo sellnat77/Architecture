@@ -5,11 +5,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 22.  For instance uut/ALUControl/, width 4 of formal port FuncCode is not equal to width 2 of actual signal ALUOp.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 23.  For instance uut/ALUControl/, width 2 of formal port ALUOp is not equal to width 4 of actual signal FuncCode.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 32.  For instance uut/ALUWithControl/, width 32 of formal port A is not equal to width 1 of actual signal AULctl.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 25.  For instance uut/ALUWithControl/, width 4 of formal port ALUctl is not equal to width 32 of actual signal B.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 27.  For instance uut/ALUWithControl/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
+WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 34.  For instance uut/ALUWithControl/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

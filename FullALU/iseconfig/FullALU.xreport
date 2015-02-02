@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-01-28T15:16:32</DateModified>
+  <DateModified>2015-02-02T09:55:37</DateModified>
   <ModuleName>FullALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Russell/git/Architecture/FullALU/iseconfig/FullALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/FullALU</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/FullALU\</ImplementationReportsDirectory>
   <DateInitialized>2015-01-28T15:16:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

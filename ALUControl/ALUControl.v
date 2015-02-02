@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALUControl(
-    input [3:0] FuncCode,
-    input [1:0] ALUOp,
-    output reg [3:0] ALUctl
-    );
+module ALUControl(ALUOp,FuncCode,ALUctl);
+
+	 input [3:0] FuncCode;
+    input [1:0] ALUOp;
+    output reg [3:0] ALUctl;
 	 
 	 always @(FuncCode,ALUOp)
 	 begin
