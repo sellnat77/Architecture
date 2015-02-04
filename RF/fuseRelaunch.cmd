@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Russell/git/Architecture/RF/RFTest_isim_beh.exe" -prj "C:/Users/Russell/git/Architecture/RF/RFTest_beh.prj" "work.RFTest" "work.glbl" 
