@@ -59,7 +59,7 @@ module RFTest;
 		Read1 = 0;
 		Read2 = 0;
 		WriteReg = 0;
-		RegWrite = 0;
+		RegWrite = 1;
 		WriteData = 0;
 
 		// Wait 100 ns for global reset to finish

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRF.xst" -ofn "C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ALUAndRF.ngc ALUAndRF.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ALUAndRF_map.ncd ALUAndRF.ngd ALUAndRF.pcf 
+par -w -intstyle ise -ol high -t 1 ALUAndRF_map.ncd ALUAndRF.ncd ALUAndRF.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ALUAndRF.twx ALUAndRF.ncd -o ALUAndRF.twr ALUAndRF.pcf 
+bitgen -intstyle ise -f ALUAndRF.ut ALUAndRF.ncd 
+vhdtdtfi -lib work C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRF.v -lang verilog -prj ALUAndRF -o ALUAndRF.spl -module ALUAndRF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ALUAndRF.spl C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRF.sym 

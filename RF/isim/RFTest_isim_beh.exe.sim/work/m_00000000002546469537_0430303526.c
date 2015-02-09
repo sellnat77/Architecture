@@ -106,7 +106,7 @@ LAB5:    xsi_set_current_line(59, ng0);
     t3 = (t0 + 2088);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 5);
     xsi_set_current_line(62, ng0);
-    t2 = ((char*)((ng1)));
+    t2 = ((char*)((ng2)));
     t3 = (t0 + 2248);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
     xsi_set_current_line(63, ng0);

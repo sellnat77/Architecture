@@ -1,0 +1,5 @@
+verilog work "../ALUWithControl/ALUWithControl.v"
+verilog work "../ALUControl/ALUControl.v"
+verilog work "../RF/RegisterFile.v"
+verilog work "../FullALU/FullALU.v"
+verilog work "ALUAndRF.v"

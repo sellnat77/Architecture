@@ -1,0 +1,5 @@
+MO FullALU NULL ../FullALU/FullALU.v vlg41/_full_a_l_u.bin 1423520550
+MO ALUWithControl NULL ../ALUWithControl/ALUWithControl.v vlg4B/_a_l_u_with_control.bin 1423520550
+MO RegisterFile NULL ../RF/RegisterFile.v vlg69/_register_file.bin 1423520550
+MO ALUAndRF NULL ALUAndRF.v vlg3D/_a_l_u_and_r_f.bin 1423520550
+MO ALUControl NULL ../ALUControl/ALUControl.v vlg23/_a_l_u_control.bin 1423520550

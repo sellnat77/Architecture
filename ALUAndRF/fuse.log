@@ -22,8 +22,8 @@ Compiling module ALUAndRF
 Compiling module ALUAndRFTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 Verilog Units
 Built simulation executable C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRFTest_isim_beh.exe
-Fuse Memory Usage: 29576 KB
-Fuse CPU Usage: 515 ms
+Fuse Memory Usage: 29536 KB
+Fuse CPU Usage: 514 ms

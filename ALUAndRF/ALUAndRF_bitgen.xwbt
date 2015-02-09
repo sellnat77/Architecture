@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Russell\git\Architecture\ALUAndRF\ALUAndRF.ncd
+OUTFILE=C:\Users\Russell\git\Architecture\ALUAndRF\ALUAndRF.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Russell\git\Architecture\ALUAndRF
+LICENSE=WebPack
+USER_INFO=210797908_0_0_075
