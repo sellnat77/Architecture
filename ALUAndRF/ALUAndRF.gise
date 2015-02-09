@@ -21,8 +21,73 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ALUAndRF.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUAndRFTest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUAndRFTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALUAndRFTest_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUAndRFTest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUAndRF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUAndRF_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1423515038" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1423515038">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515554" xil_pn:in_ck="7248977463796408421" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1423515554">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
+      <outfile xil_pn:name="../ALUWithControl/ALUWithControl.v"/>
+      <outfile xil_pn:name="../FullALU/FullALU.v"/>
+      <outfile xil_pn:name="../RF/RegisterFile.v"/>
+      <outfile xil_pn:name="ALUAndRF.v"/>
+      <outfile xil_pn:name="ALUAndRFTest.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515525" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7362510389965462108" xil_pn:start_ts="1423515525">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515525" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3073180559977279770" xil_pn:start_ts="1423515525">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515038" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6337281583552647092" xil_pn:start_ts="1423515038">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515554" xil_pn:in_ck="7248977463796408421" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1423515554">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
+      <outfile xil_pn:name="../ALUWithControl/ALUWithControl.v"/>
+      <outfile xil_pn:name="../FullALU/FullALU.v"/>
+      <outfile xil_pn:name="../RF/RegisterFile.v"/>
+      <outfile xil_pn:name="ALUAndRF.v"/>
+      <outfile xil_pn:name="ALUAndRFTest.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515557" xil_pn:in_ck="7248977463796408421" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1019846520809352553" xil_pn:start_ts="1423515554">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUAndRFTest_beh.prj"/>
+      <outfile xil_pn:name="ALUAndRFTest_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1423515558" xil_pn:in_ck="-5190748807986931656" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="51142163290297100" xil_pn:start_ts="1423515557">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUAndRFTest_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
 
 </generated_project>

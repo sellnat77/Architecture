@@ -31,18 +31,12 @@ module ALUAndRF(
     output ALUOut
     );
 	 
-	 wire ;
-	 wire ;
-	 wire ;
-	 wire ;
-	 wire ;
-	 wire ;
-	 wire ;
+	 wire [31:0]Data1;
+	 wire [31:0]Data2;	 
 	 
+	 RegisterFile RegisterFile(clk,Read1,Read2,WriteReg,RegWrite,WriteData,Data1,Data2);
+	 FullALU FullALU(ALUOp,FuncCode,Data1,Data2,ALUOut,Zero);
 	 
-	 
-	 FullALU FullALU();
-	 RegisterFile RegisterFile();
 
 
 endmodule

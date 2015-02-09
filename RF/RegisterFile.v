@@ -19,15 +19,24 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module RegisterFile(
-	 input clk,
-    input [4:0] Read1,
-    input [4:0] Read2,
-    input [4:0] WriteReg,
-	 input [1:0]RegWrite,
-    input [31:0] WriteData,
-    output [31:0]Data1,
-    output [31:0]Data2
+	 clk,
+    Read1,
+    Read2,
+    WriteReg,
+	 RegWrite,
+    WriteData,
+    Data1,
+    Data2
     );
+	 
+	 input clk;
+    input [4:0] Read1;
+    input [4:0] Read2;
+    input [4:0] WriteReg;
+	 input [1:0]RegWrite;
+    input [31:0] WriteData;
+    output [31:0]Data1;
+    output [31:0]Data2;
 	 
 	 reg [31:0] RF[0:31];
 
