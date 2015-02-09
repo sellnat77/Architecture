@@ -35,7 +35,9 @@ module RegisterFile(
 	assign Data2 = ( Read2 == 0) ? 32'b0 : RF[Read2];
 	 
 	 always @(posedge clk)
-	 if(RegWrite == 1)
-		RF[WriteReg]<=WriteData;
+		begin
+			if(RegWrite == 1)
+				RF[WriteReg]<=WriteData;
+		end
 		
 endmodule

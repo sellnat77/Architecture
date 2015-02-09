@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-02-04T14:21:27</DateModified>
+  <DateModified>2015-02-09T09:26:49</DateModified>
   <ModuleName>RegisterFile</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Russell/git/Architecture/RF/iseconfig/RegisterFile.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/RF</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/RF\</ImplementationReportsDirectory>
   <DateInitialized>2015-02-04T14:21:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
