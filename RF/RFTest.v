@@ -49,13 +49,13 @@ module RFTest;
 	);
 	always
 		begin
-		#100 clk = 0;
-		#100 clk = 1;
+		#50 clk = 0;
+		#50 clk = 1;
 		end
 
 	initial begin
 		// Initialize Inputs
-		#100;
+		#50;
 		Read1 = 0;
 		Read2 = 0;
 		WriteReg = 0;
@@ -63,43 +63,35 @@ module RFTest;
 		WriteData = 0;
 
 		// Wait 100 ns for global reset to finish
-		#50;
-		Read1 = 1;
+		#100;
+		Read1 = 5'b00101;
 		Read2 = 0;
-		WriteReg = 1;
+		WriteReg = 5'b00101;
 		RegWrite = 1;
 		WriteData = 32'h55555555;
-       
-		#150;
-		Read1 = 0;
-		Read2 = 1;
-		WriteReg = 1;
-		RegWrite = 1;
-		WriteData = 32'h00000000;	
 		
-		#150;
+		#100;
 		Read1 = 0;
-		Read2 = 1;
-		WriteReg = 1;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;		
-		
-		#150;
-		Read1 = 1;
-		Read2 = 0;
-		WriteReg = 1;
+		Read2 = 5'b01010;
+		WriteReg = 5'b001010;
 		RegWrite = 1;
 		WriteData = 32'haaaaaaaa;	
-
-		#150;
-		Read1 = 0;
-		Read2 = 1;
-		WriteReg = 1;
+		
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 0;
+		WriteReg = 5'b00101;
 		RegWrite = 1;
-		WriteData = 32'h55555555;			
-
-	
-
+		WriteData = 32'h00000000;
+		
+		#100;
+		Read1 = 0;
+		Read2 = 5'b01010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'h00000000;			
+       
+			
 
 	end
       

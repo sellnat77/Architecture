@@ -29,15 +29,14 @@ module RegisterFile(
     output [31:0]Data2
     );
 	 
-	 reg [31:0] RF[31:0];
+	 reg [31:0] RF[0:31];
 
-	assign Data1 = ( Read1 == 0) ? 32'b0 : RF[Read1];
-	assign Data2 = ( Read2 == 0) ? 32'b0 : RF[Read2];
+	assign Data1 = RF[Read1];
+	assign Data2 = RF[Read2];
 	 
 	 always @(posedge clk)
-		begin
-			if(RegWrite == 1)
-				RF[WriteReg]<=WriteData;
-		end
+		if(RegWrite == 1)
+			RF[WriteReg] <= WriteData;
+	
 		
 endmodule
