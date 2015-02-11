@@ -2,14 +2,14 @@ Command line:
    ALUAndRFTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56616
+     -socket  49767
 
-Mon Feb 09 14:27:04 2015
+Wed Feb 11 09:22:55 2015
 
 
  Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 369.861 Meg
+ Current Memory Usage: 365.818 Meg
 
  Total Signals          : 47
  Total Nets             : 171
@@ -19,11 +19,11 @@ Mon Feb 09 14:27:04 2015
  Total Processes        : 24
  Total Traceable Variables  : 30
  Total Scalar Nets and Variables : 1369
-Total Line Count : 75
+Total Line Count : 154
 
- Total Simulation Time: 0.09375 sec
+ Total Simulation Time: 0.046875 sec
 
- Current Memory Usage: 369.861 Meg
+ Current Memory Usage: 680.407 Meg
 
-Mon Feb 09 14:27:21 2015
+Wed Feb 11 09:23:31 2015
 

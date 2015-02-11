@@ -27,8 +27,8 @@ module ALUAndRF(
     input [31:0] WriteData,
     input [3:0] FuncCode,
     input [1:0] ALUOp,
-    output Zero,
-    output ALUOut
+    output [1:0]Zero,
+    output [31:0]ALUOut
     );
 	 
 	 wire [31:0]Data1;

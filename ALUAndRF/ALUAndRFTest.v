@@ -35,8 +35,8 @@ module ALUAndRFTest;
 	reg [1:0] ALUOp;
 
 	// Outputs
-	wire Zero;
-	wire ALUOut;
+	wire [1:0]Zero;
+	wire [31:0]ALUOut;
 
 	// Instantiate the Unit Under Test (UUT)
 	ALUAndRF uut (
@@ -68,12 +68,11 @@ always
 		ALUOp = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#50;
         
 		// Add stimulus here
-		#50;
 		Read1 = 5'b00101;
-		Read2 = 0;
+		Read2 = 5'b001010;
 		WriteReg = 5'b00101;
 		RegWrite = 1;
 		WriteData = 32'h55555555;
@@ -81,21 +80,111 @@ always
 		ALUOp = 2'b10;
 		
 		#100;
-		Read1 = 0;
+		Read1 = 5'b00101;;
 		Read2 = 5'b001010;
 		WriteReg = 5'b001010;
 		RegWrite = 1;
 		WriteData = 32'haaaaaaaa;
 		FuncCode = 4'b0000;
 		ALUOp = 2'b10;
-
+		
 		#100;
 		Read1 = 5'b00101;
-		Read2 = 0;
+		Read2 = 5'b001010;
 		WriteReg = 5'b00101;
 		RegWrite = 1;
 		WriteData = 32'h55555555;
-		FuncCode = 4'b0000;
+		FuncCode = 4'b0001;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;;
+		Read2 = 5'b001010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0001;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 5'b001010;
+		WriteReg = 5'b00101;
+		RegWrite = 1;
+		WriteData = 32'h55555555;
+		FuncCode = 4'b0010;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;;
+		Read2 = 5'b001010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0010;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 5'b001010;
+		WriteReg = 5'b00101;
+		RegWrite = 1;
+		WriteData = 32'h55555555;
+		FuncCode = 4'b0110;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;;
+		Read2 = 5'b001010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0110;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 5'b001010;
+		WriteReg = 5'b00101;
+		RegWrite = 1;
+		WriteData = 32'h55555555;
+		FuncCode = 4'b0111;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b00101;;
+		Read2 = 5'b001010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0111;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b01010;
+		Read2 = 5'b00101;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'h55555555;
+		FuncCode = 4'b0111;
+		ALUOp = 2'b10;	
+		
+		#100;
+		Read1 = 5'b01010;
+		Read2 = 5'b00101;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0111;
+		ALUOp = 2'b10;
+		
+		#100;
+		Read1 = 5'b01010;
+		Read2 = 5'b00101;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
+		FuncCode = 4'b0111;
 		ALUOp = 2'b10;
 
 

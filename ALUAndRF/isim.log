@@ -5,8 +5,6 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 34.  For instance FullALU/ALUWithControl/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
-WARNING: File "C:/Users/Russell/git/Architecture/ALUAndRF/ALUAndRF.v" Line 31.  For instance uut/FullALU/, width 32 of formal port ALUOut is not equal to width 1 of actual signal ALUOut.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
