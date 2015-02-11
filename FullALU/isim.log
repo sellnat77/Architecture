@@ -5,10 +5,15 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 34.  For instance uut/ALUWithControl/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
+WARNING: File "C:/Users/Russell/git/Architecture/FullALU/FullALUTest.v" Line 35.  For instance FullALUTest/uut/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+# restart
+# run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

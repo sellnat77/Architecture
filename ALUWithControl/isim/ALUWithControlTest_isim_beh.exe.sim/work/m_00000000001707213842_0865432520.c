@@ -179,9 +179,9 @@ LAB11:    goto LAB1;
 }
 
 
-extern void work_m_00000000003192008818_0865432520_init()
+extern void work_m_00000000001707213842_0865432520_init()
 {
 	static char *pe[] = {(void *)Initial_45_0};
-	xsi_register_didat("work_m_00000000003192008818_0865432520", "isim/ALUWithControlTest_isim_beh.exe.sim/work/m_00000000003192008818_0865432520.didat");
+	xsi_register_didat("work_m_00000000001707213842_0865432520", "isim/ALUWithControlTest_isim_beh.exe.sim/work/m_00000000001707213842_0865432520.didat");
 	xsi_register_executes(pe);
 }

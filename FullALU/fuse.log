@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Russell/git/Architecture/FullALU/FullALUTest_isim_beh.exe -prj C:/Users/Russell/git/Architecture/FullALU/FullALUTest_beh.prj work.FullALUTest work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Russell/git/Architecture/FullALU/FullALUTest_isim_beh.exe -prj C:/Users/Russell/git/Architecture/FullALU/FullALUTest_beh.prj FullALUTest work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -9,7 +9,7 @@ Analyzing Verilog file "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" int
 Analyzing Verilog file "C:/Users/Russell/git/Architecture/FullALU/FullALUTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/FullALU/FullALU.v" Line 39: Size mismatch in connection of port <Zero>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/FullALU/FullALUTest.v" Line 44: Size mismatch in connection of port <Zero>. Formal port size is 2-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module ALUControl
 Compiling module ALUWithControl
@@ -19,5 +19,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 5 Verilog Units
 Built simulation executable C:/Users/Russell/git/Architecture/FullALU/FullALUTest_isim_beh.exe
-Fuse Memory Usage: 29424 KB
+Fuse Memory Usage: 29356 KB
 Fuse CPU Usage: 453 ms

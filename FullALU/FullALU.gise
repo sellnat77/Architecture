@@ -37,11 +37,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1422916397" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1422916397">
+    <transform xil_pn:end_ts="1423695036" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422917142" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1422917142">
+    <transform xil_pn:end_ts="1423695036" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
@@ -49,19 +49,19 @@
       <outfile xil_pn:name="FullALU.v"/>
       <outfile xil_pn:name="FullALUTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1422916850" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1380972795526944980" xil_pn:start_ts="1422916850">
+    <transform xil_pn:end_ts="1423695036" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1380972795526944980" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422916850" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-111213022269234578" xil_pn:start_ts="1422916850">
+    <transform xil_pn:end_ts="1423695036" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-111213022269234578" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422916397" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5870105206481465396" xil_pn:start_ts="1422916397">
+    <transform xil_pn:end_ts="1423695036" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5870105206481465396" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1422917142" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1422917142">
+    <transform xil_pn:end_ts="1423695036" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
@@ -69,9 +69,10 @@
       <outfile xil_pn:name="FullALU.v"/>
       <outfile xil_pn:name="FullALUTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1422917145" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2996675648191206503" xil_pn:start_ts="1422917142">
+    <transform xil_pn:end_ts="1423695039" xil_pn:in_ck="-6416686474994069614" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2996675648191206503" xil_pn:start_ts="1423695036">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FullALUTest_beh.prj"/>
@@ -81,9 +82,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1422917146" xil_pn:in_ck="-3530490104016916920" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4750539932243099740" xil_pn:start_ts="1422917145">
+    <transform xil_pn:end_ts="1423695039" xil_pn:in_ck="-3530490104016916920" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4750539932243099740" xil_pn:start_ts="1423695039">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FullALUTest_isim_beh.wdb"/>

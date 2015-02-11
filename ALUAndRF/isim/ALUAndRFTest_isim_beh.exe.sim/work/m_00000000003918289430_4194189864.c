@@ -27,8 +27,9 @@ static unsigned int ng2[] = {1U, 0U};
 static unsigned int ng3[] = {2U, 0U};
 static unsigned int ng4[] = {6U, 0U};
 static unsigned int ng5[] = {7U, 0U};
-static int ng6[] = {1, 0};
+static unsigned int ng6[] = {286331153U, 0U};
 static int ng7[] = {0, 0};
+static int ng8[] = {1, 0};
 
 
 
@@ -367,7 +368,7 @@ LAB31:    t15 = (t42 + 4);
 LAB33:    t24 = ((char*)((ng6)));
     goto LAB34;
 
-LAB35:    t41 = ((char*)((ng7)));
+LAB35:    t41 = ((char*)((ng1)));
     goto LAB36;
 
 LAB37:    xsi_vlog_unsigned_bit_combine(t10, 32, t24, 32, t41, 32);
@@ -382,7 +383,7 @@ LAB44:    t14 = (t10 + 4);
     goto LAB45;
 
 LAB46:    xsi_set_current_line(37, ng0);
-    t23 = ((char*)((ng6)));
+    t23 = ((char*)((ng8)));
     t24 = (t0 + 1928);
     xsi_vlogvar_assign_value(t24, t23, 0, 0, 2);
     goto LAB48;

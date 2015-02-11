@@ -32,7 +32,7 @@ module ALUWithControl(ALUctl,A,B,ALUOut,Zero);
 			4'b0001: ALUOut = A | B;
 			4'b0010: ALUOut = A + B;
 			4'b0110: ALUOut = A - B;
-			4'b0111: ALUOut = A < B ? 1:0;
+			4'b0111: ALUOut = A < B ? 32'h11111111:32'h00000000;
 		endcase
 		if (ALUOut == 0) Zero = 1;
 		else Zero = 0;

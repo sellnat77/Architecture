@@ -58,7 +58,6 @@ always
 	end
 	initial begin
 		// Initialize Inputs
-		clk = 0;
 		Read1 = 0;
 		Read2 = 0;
 		WriteReg = 0;
@@ -76,118 +75,43 @@ always
 		WriteReg = 5'b00101;
 		RegWrite = 1;
 		WriteData = 32'h55555555;
+		
+		
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 5'b01010;
+		WriteReg = 5'b001010;
+		RegWrite = 1;
+		WriteData = 32'haaaaaaaa;
 		FuncCode = 4'b0000;
 		ALUOp = 2'b10;
 		
 		#100;
-		Read1 = 5'b00101;;
-		Read2 = 5'b001010;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
+		Read1 = 5'b00101;
+		Read2 = 5'b01010;
+		RegWrite = 0;
+		WriteData = 32'h00000000;
 		FuncCode = 4'b0000;
-		ALUOp = 2'b10;
 		
 		#100;
 		Read1 = 5'b00101;
-		Read2 = 5'b001010;
-		WriteReg = 5'b00101;
-		RegWrite = 1;
-		WriteData = 32'h55555555;
-		FuncCode = 4'b0001;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b00101;;
-		Read2 = 5'b001010;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0001;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b00101;
-		Read2 = 5'b001010;
-		WriteReg = 5'b00101;
-		RegWrite = 1;
-		WriteData = 32'h55555555;
+		Read2 = 5'b01010;
 		FuncCode = 4'b0010;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b00101;;
-		Read2 = 5'b001010;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0010;
-		ALUOp = 2'b10;
 		
 		#100;
 		Read1 = 5'b00101;
-		Read2 = 5'b001010;
-		WriteReg = 5'b00101;
-		RegWrite = 1;
-		WriteData = 32'h55555555;
-		FuncCode = 4'b0110;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b00101;;
-		Read2 = 5'b001010;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0110;
-		ALUOp = 2'b10;
+		Read2 = 5'b01010;
+		FuncCode = 4'b0100;
 		
 		#100;
 		Read1 = 5'b00101;
-		Read2 = 5'b001010;
-		WriteReg = 5'b00101;
-		RegWrite = 1;
-		WriteData = 32'h55555555;
-		FuncCode = 4'b0111;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b00101;;
-		Read2 = 5'b001010;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0111;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b01010;
-		Read2 = 5'b00101;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'h55555555;
-		FuncCode = 4'b0111;
-		ALUOp = 2'b10;	
-		
-		#100;
-		Read1 = 5'b01010;
-		Read2 = 5'b00101;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0111;
-		ALUOp = 2'b10;
-		
-		#100;
-		Read1 = 5'b01010;
-		Read2 = 5'b00101;
-		WriteReg = 5'b001010;
-		RegWrite = 1;
-		WriteData = 32'haaaaaaaa;
-		FuncCode = 4'b0111;
-		ALUOp = 2'b10;
+		Read2 = 5'b01010;
+		FuncCode = 4'b0101;
 
-
+		#100;
+		Read1 = 5'b00101;
+		Read2 = 5'b01010;
+		FuncCode = 4'b1010;
 
 	end
       
