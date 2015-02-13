@@ -1,0 +1,16 @@
+[Inputs]
+clk
+=Read1[4:0]=
+=Read2[4:0]=
+=WriteReg[4:0]=
+=RegWrite[1:0]=
+=WriteData[31:0]=
+=FuncCode[3:0]=
+=ALUOp[1:0]=
+[Outputs]
+Zero
+ALUOut
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALUAndRF
+

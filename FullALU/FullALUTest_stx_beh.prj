@@ -1,0 +1,5 @@
+verilog isim_temp "../ALUWithControl/ALUWithControl.v"
+verilog isim_temp "../ALUControl/ALUControl.v"
+verilog isim_temp "FullALU.v"
+verilog isim_temp "FullALUTest.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

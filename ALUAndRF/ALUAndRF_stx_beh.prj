@@ -1,0 +1,4 @@
+verilog isim_temp "../RF/RegisterFile.v"
+verilog isim_temp "../FullALU/FullALU.v"
+verilog isim_temp "ALUAndRF.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
