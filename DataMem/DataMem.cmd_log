@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Russell/git/Architecture/DataMem/DataMem.xst" -ofn "C:/Users/Russell/git/Architecture/DataMem/DataMem.syr" 

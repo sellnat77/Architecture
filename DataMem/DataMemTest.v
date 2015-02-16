@@ -71,6 +71,8 @@ module DataMemTest;
 		DM[41] = 8'haa;
 		DM[42] = 8'haa;
 		DM[43] = 8'haa;
+		end
+		initial begin
 
 		//…	// no need as we will not use these locations
 		// Initialize Inputs
@@ -87,23 +89,21 @@ module DataMemTest;
 		
 
 		#100;
-		Address = 32'h00000014;
-		WriteData = 0;
-		MemWrite = 0;
+		Address[7:0] = 8'h14;
+		//Address = 32'h14141414;
 		MemRead = 1;
 		
 		#100;
-		Address = 32'h00000028;
-		WriteData = 0;
+		Address = 32'h28282828;
 
 		#100;
-		Address = 32'h00000014;
+		Address = 32'h14141414;
 		WriteData = 32'h99999999;
 		MemWrite = 1;
 		MemRead = 0;
 		
 		#100;
-		Address = 32'h00000028;
+		Address = 32'h28282828;
 		WriteData = 32'heeeeeeee;	
 
 	end
