@@ -2,28 +2,28 @@ Command line:
    DataMemTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50331
+     -socket  54267
 
-Mon Feb 16 10:01:04 2015
+Mon Feb 16 15:22:19 2015
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 369.902 Meg
+ Current Memory Usage: 369.922 Meg
 
- Total Signals          : 18
+ Total Signals          : 19
  Total Nets             : 114
- Total Signal Drivers   : 12
+ Total Signal Drivers   : 11
  Total Blocks           : 3
  Total Primitive Blocks : 2
- Total Processes        : 19
- Total Traceable Variables  : 27
- Total Scalar Nets and Variables : 4423
-Total Line Count : 66
+ Total Processes        : 17
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 2343
+Total Line Count : 77
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.03125 sec
 
- Current Memory Usage: 369.902 Meg
+ Current Memory Usage: 369.922 Meg
 
-Mon Feb 16 10:01:30 2015
+Mon Feb 16 15:22:48 2015
 
