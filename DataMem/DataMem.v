@@ -62,10 +62,10 @@ module DataMem(
 	 always @ (posedge clk)
 	 begin		
 		if (MemRead == 1)
-			 ReadData[7:0] <= DM[Address[7:0]+0];
-			ReadData[15:8] <= DM[Address[7:0]+1];
-		  	ReadData[23:16] <= DM[Address[7:0]+2];
-			ReadData[31:24] <= DM[Address[7:0]+3];		
+			ReadData[7:0] = DM[Address[7:0]+0];
+			ReadData[15:8] = DM[Address[7:0]+1];
+		  	ReadData[23:16] = DM[Address[7:0]+2];
+			ReadData[31:24] = DM[Address[7:0]+3];		
 	 end
 
 

@@ -62,12 +62,11 @@ module DataMemTest;
 		MemRead = 1;
 
 		// Wait 100 ns for global reset to finish
-		#50;
         
 		// Add stimulus here
 		
 
-		#100;
+		#50;
 		Address = 20;
 		MemRead = 1;
 		
@@ -91,9 +90,6 @@ module DataMemTest;
 		
 		#100;
 		Address = 40;
-		
-		#100;
-		Address = 20;
 
 	end
       

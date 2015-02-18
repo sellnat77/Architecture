@@ -1248,7 +1248,7 @@ LAB13:    t70 = *((unsigned int *)t53);
     t73 = *((unsigned int *)t52);
     t74 = (t72 - t73);
     t75 = (t74 + 1);
-    xsi_vlogvar_wait_assign_value(t50, t31, t71, *((unsigned int *)t52), t75, 0LL);
+    xsi_vlogvar_assign_value(t50, t31, t71, *((unsigned int *)t52), t75);
     goto LAB14;
 
 LAB15:    t18 = *((unsigned int *)t52);
@@ -1257,7 +1257,7 @@ LAB15:    t18 = *((unsigned int *)t52);
     t20 = *((unsigned int *)t51);
     t74 = (t19 - t20);
     t75 = (t74 + 1);
-    xsi_vlogvar_wait_assign_value(t34, t6, t71, *((unsigned int *)t51), t75, 0LL);
+    xsi_vlogvar_assign_value(t34, t6, t71, *((unsigned int *)t51), t75);
     goto LAB16;
 
 LAB17:    t18 = *((unsigned int *)t52);
@@ -1266,7 +1266,7 @@ LAB17:    t18 = *((unsigned int *)t52);
     t20 = *((unsigned int *)t51);
     t74 = (t19 - t20);
     t75 = (t74 + 1);
-    xsi_vlogvar_wait_assign_value(t34, t6, t71, *((unsigned int *)t51), t75, 0LL);
+    xsi_vlogvar_assign_value(t34, t6, t71, *((unsigned int *)t51), t75);
     goto LAB18;
 
 LAB19:    t18 = *((unsigned int *)t52);
@@ -1275,7 +1275,7 @@ LAB19:    t18 = *((unsigned int *)t52);
     t20 = *((unsigned int *)t51);
     t74 = (t19 - t20);
     t75 = (t74 + 1);
-    xsi_vlogvar_wait_assign_value(t34, t6, t71, *((unsigned int *)t51), t75, 0LL);
+    xsi_vlogvar_assign_value(t34, t6, t71, *((unsigned int *)t51), t75);
     goto LAB20;
 
 }
