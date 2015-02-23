@@ -5,5 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-</messages>
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 44: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
 
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 46: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Read1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 48: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">SEin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 50: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 52: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 54: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="error" file="Simulator" num="754" delta="unknown" >Signal EXCEPTION_ACCESS_VIOLATION received
+</msg>
+
+<msg type="error" file="Simulator" num="754" delta="unknown" >Signal EXCEPTION_ACCESS_VIOLATION received
+</msg>
+
+</messages>

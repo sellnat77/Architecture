@@ -1,10 +1,38 @@
 ISim log file
-Running: C:\Users\Russell\git\Architecture\DataMem\DataMemTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Russell/git/Architecture/DataMem/DataMemTest_isim_beh.wdb 
+Running: C:\Users\Russell\git\Architecture\DataMem\FullDataMemTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Russell/git/Architecture/DataMem/FullDataMemTest_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34.  For instance uut/DataMem/, width 32 of formal port Address is not equal to width 1 of actual signal ALUResultWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 35.  For instance uut/DataMem/, width 32 of formal port WriteData is not equal to width 1 of actual signal ReadData2Wire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 23.  For instance uut/DataMem/, width 2 of formal port MemWrite is not equal to width 1 of actual signal MemWrite.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 24.  For instance uut/DataMem/, width 2 of formal port MemRead is not equal to width 1 of actual signal MemRead.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 37.  For instance uut/DataMem/, width 32 of formal port ReadData is not equal to width 1 of actual signal ReadDataWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 36.  For instance uut/ALUAndRF/, width 5 of formal port Read1 is not equal to width 1 of actual signal ReadData1Wire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 35.  For instance uut/ALUAndRF/, width 5 of formal port Read2 is not equal to width 1 of actual signal ReadData2Wire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 38.  For instance uut/ALUAndRF/, width 5 of formal port WriteReg is not equal to width 1 of actual signal WriteRegWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 25.  For instance uut/ALUAndRF/, width 2 of formal port RegWrite is not equal to width 1 of actual signal RegWrite.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 39.  For instance uut/ALUAndRF/, width 32 of formal port WriteData is not equal to width 1 of actual signal WriteDataWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 26.  For instance uut/ALUAndRF/, width 4 of formal port FuncCode is not equal to width 1 of actual signal FuncCode.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 27.  For instance uut/ALUAndRF/, width 2 of formal port ALUOp is not equal to width 1 of actual signal ALUOp.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34.  For instance uut/ALUAndRF/, width 2 of formal port Zero is not equal to width 1 of actual signal ALUResultWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 40.  For instance uut/ALUAndRF/, width 32 of formal port ALUOut is not equal to width 1 of actual signal ZeroWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 28.  For instance uut/SignExtender/, width 16 of formal port SEin is not equal to width 1 of actual signal SEin.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 41.  For instance uut/SignExtender/, width 32 of formal port SEout is not equal to width 1 of actual signal SExtendWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 35.  For instance uut/TwoOneMux32/, width 32 of formal port A is not equal to width 1 of actual signal ReadData2Wire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 41.  For instance uut/TwoOneMux32/, width 32 of formal port B is not equal to width 1 of actual signal SExtendWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 31.  For instance uut/TwoOneMux32/, width 2 of formal port sel is not equal to width 1 of actual signal sel.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 35.  For instance uut/TwoOneMux32/, width 32 of formal port out is not equal to width 1 of actual signal ReadData2Wire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 29.  For instance uut/TwoOneMux321/, width 32 of formal port A is not equal to width 1 of actual signal A.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 30.  For instance uut/TwoOneMux321/, width 32 of formal port B is not equal to width 1 of actual signal B.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 31.  For instance uut/TwoOneMux321/, width 2 of formal port sel is not equal to width 1 of actual signal sel.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 38.  For instance uut/TwoOneMux321/, width 32 of formal port out is not equal to width 1 of actual signal WriteRegWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 37.  For instance uut/TwoOneMux5/, width 5 of formal port A is not equal to width 1 of actual signal ReadDataWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34.  For instance uut/TwoOneMux5/, width 5 of formal port B is not equal to width 1 of actual signal ALUResultWire.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 31.  For instance uut/TwoOneMux5/, width 2 of formal port sel is not equal to width 1 of actual signal sel.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 39.  For instance uut/TwoOneMux5/, width 5 of formal port out is not equal to width 1 of actual signal WriteDataWire.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

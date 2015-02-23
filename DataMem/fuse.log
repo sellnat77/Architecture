@@ -1,19 +1,45 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Russell/git/Architecture/DataMem/DataMemTest_isim_beh.exe -prj C:/Users/Russell/git/Architecture/DataMem/DataMemTest_beh.prj work.DataMemTest work.glbl 
-ISim P.20131013 (signature 0x7708f090)
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Russell/git/Architecture/DataMem/FullDataMemTest_isim_beh.exe" -prj "C:/Users/Russell/git/Architecture/DataMem/FullDataMemTest_beh.prj" "work.FullDataMemTest" "work.glbl" 
+ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/../ALUWithControl/ALUWithControl.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/../ALUControl/ALUControl.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/../RF/RegisterFile.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/../FullALU/FullALU.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/TwoOneMux5.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/TwoOneMux321.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/TwoOneMux32.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/SignExtender.v" into library work
 Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/DataMem.v" into library work
-Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/DataMemTest.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/../ALUAndRF/ALUAndRF.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" into library work
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullDataMemTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 44: Size mismatch in connection of port <Address>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 46: Size mismatch in connection of port <Read1>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 48: Size mismatch in connection of port <SEin>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 50: Size mismatch in connection of port <A>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 52: Size mismatch in connection of port <A>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 54: Size mismatch in connection of port <A>. Formal port size is 5-bit while actual signal size is 1-bit.
 Completed static elaboration
+Fuse Memory Usage: 123132 KB
+Fuse CPU Usage: 343 ms
 Compiling module DataMem
-Compiling module DataMemTest
+Compiling module RegisterFile
+Compiling module ALUControl
+Compiling module ALUWithControl
+Compiling module FullALU
+Compiling module ALUAndRF
+Compiling module SignExtender
+Compiling module TwoOneMux32
+Compiling module TwoOneMux321
+Compiling module TwoOneMux5
+Compiling module FullDMRFALU
+Compiling module FullDataMemTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/Russell/git/Architecture/DataMem/DataMemTest_isim_beh.exe
-Fuse Memory Usage: 29596 KB
-Fuse CPU Usage: 436 ms
+Waiting for 6 sub-compilation(s) to finish...
+ERROR:Simulator:754 - Signal EXCEPTION_ACCESS_VIOLATION received
+ERROR:Simulator:754 - Signal EXCEPTION_ACCESS_VIOLATION received

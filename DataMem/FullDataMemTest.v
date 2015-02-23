@@ -72,7 +72,46 @@ module FullDataMemTest;
 		#100;
         
 		// Add stimulus here
-
+		#100;
+		MemWrite = 1;
+		MemRead = 0;
+		RegWrite = 20;
+		FuncCode = 4'b0000;
+		ALUOp = 2;
+		SEin = 16'b0000000000000000;
+		A = 50;
+		B = 10;
+		sel = 1;
+		#100;
+		MemWrite = 0;
+		MemRead = 0;
+		RegWrite = 0;
+		FuncCode = 0;
+		ALUOp = 0;
+		SEin = 0;
+		A = 0;
+		B = 0;
+		sel = 0;
+		#100;
+		MemWrite = 0;
+		MemRead = 0;
+		RegWrite = 0;
+		FuncCode = 0;
+		ALUOp = 0;
+		SEin = 0;
+		A = 0;
+		B = 0;
+		sel = 0;
+		#100;
+		MemWrite = 0;
+		MemRead = 0;
+		RegWrite = 0;
+		FuncCode = 0;
+		ALUOp = 0;
+		SEin = 0;
+		A = 0;
+		B = 0;
+		sel = 0;
 	end
       
 endmodule
