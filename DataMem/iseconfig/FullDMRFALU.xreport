@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-02-23T14:41:58</DateModified>
+  <DateModified>2015-02-23T15:14:46</DateModified>
   <ModuleName>FullDMRFALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Russell/git/Architecture/DataMem/iseconfig/DataMem.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/DataMem\</ImplementationReportsDirectory>
-  <DateInitialized>2015-02-23T14:41:58</DateInitialized>
+  <SavedFilePath>C:/Users/Russell/git/Architecture/DataMem/iseconfig/FullDMRFALU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/DataMem</ImplementationReportsDirectory>
+  <DateInitialized>2015-02-23T15:14:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
