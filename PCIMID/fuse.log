@@ -4,7 +4,16 @@ Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/Russell/git/Architecture/PCIMID/PC.v" into library work
-ERROR:HDLCompiler:1660 - "C:/Users/Russell/git/Architecture/PCIMID/PC.v" Line 29: Procedural assignment to a non-register PCIn is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/Russell/git/Architecture/PCIMID/PC.v" Line 29: Procedural assignment to a non-register PCIn is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:598 - "C:/Users/Russell/git/Architecture/PCIMID/PC.v" Line 21: Module <PC> ignored due to previous errors.
-Verilog file C:/Users/Russell/git/Architecture/PCIMID/PC.v ignored due to errors
+Analyzing Verilog file "C:/Users/Russell/git/Architecture/PCIMID/PCTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module PCTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Russell/git/Architecture/PCIMID/PCTest_isim_beh.exe
+Fuse Memory Usage: 29068 KB
+Fuse CPU Usage: 468 ms

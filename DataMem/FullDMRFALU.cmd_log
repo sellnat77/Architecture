@@ -18,3 +18,4 @@ xst -intstyle ise -ifn "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.xs
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 FullDMRFALU.ngc FullDMRFALU.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o FullDMRFALU_map.ncd FullDMRFALU.ngd FullDMRFALU.pcf 
 xst -intstyle ise -ifn "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.xst" -ofn "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.xst" -ofn "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.syr" 

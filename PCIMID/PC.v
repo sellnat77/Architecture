@@ -19,16 +19,21 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module PC(
-    input clk,
-	 input reg [7:0] PCIn,
-  	 output wire [7:0]PCOut
+    clk,PCOutput
     );
+	 input clk;
+	 output reg [7:0] PCOutput;
+	 
+	 initial 
+		PCOutput = 0;
 	 
 	 always @ (posedge clk)
 	 begin
-		assign PCOut = PCOut + 4;
+		 
+		PCOutput = PCOutput + 4;
+		
 	 end
-	 
+	
 
 	
 

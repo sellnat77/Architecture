@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   14:02:49 02/25/2015
+// Create Date:   15:03:43 02/25/2015
 // Design Name:   PC
 // Module Name:   C:/Users/Russell/git/Architecture/PCIMID/PCTest.v
 // Project Name:  PCIMID
@@ -26,18 +26,23 @@ module PCTest;
 
 	// Inputs
 	reg clk;
-	reg PCIn;
+
+	// Outputs
+	wire [7:0] PCOutput;
 
 	// Instantiate the Unit Under Test (UUT)
 	PC uut (
-		.clk(clk),
-		.PCIn(PCIn)
+		.clk(clk), 
+		.PCOutput(PCOutput)
 	);
-
+	always
+	begin
+	#50 clk = 0;
+	#50 clk = 1;
+	end
 	initial begin
 		// Initialize Inputs
 		clk = 0;
-
 		// Wait 100 ns for global reset to finish
 		#100;
         
