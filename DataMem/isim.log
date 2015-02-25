@@ -9,21 +9,19 @@ WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34.
 WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34.  For instance uut/DataMem/, width 32 of formal port WriteData is not equal to width 1 of actual signal ReadData2Wire.
 WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/DataMem/, width 2 of formal port MemWrite is not equal to width 1 of actual signal MemWrite.
 WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/DataMem/, width 2 of formal port MemRead is not equal to width 1 of actual signal MemRead.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/ALUAndRF/, width 2 of formal port RegWrite is not equal to width 1 of actual signal RegWrite.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 23.  For instance uut/ALUAndRF/, width 4 of formal port FuncCode is not equal to width 6 of actual signal FuncCode.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/ALUAndRF/, width 2 of formal port ALUOp is not equal to width 1 of actual signal ALUOp.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 27.  For instance uut/ALUAndRF/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
 WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/TwoOneMux32/, width 2 of formal port sel is not equal to width 1 of actual signal ALUsel.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 42.  For instance uut/TwoOneMux321/, width 2 of formal port sel is not equal to width 1 of actual signal MemToReg.
-WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 44.  For instance uut/TwoOneMux5/, width 2 of formal port sel is not equal to width 1 of actual signal RegSel.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 40.  For instance uut/TwoOneMux321/, width 2 of formal port sel is not equal to width 1 of actual signal MemToReg.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 42.  For instance uut/TwoOneMux5/, width 2 of formal port sel is not equal to width 1 of actual signal RegSel.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/ALUControl/, width 2 of formal port ALUOp is not equal to width 1 of actual signal ALUOp.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 23.  For instance uut/ALUControl/, width 4 of formal port FuncCode is not equal to width 6 of actual signal FuncCode.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 27.  For instance uut/ALUWithControl/, width 2 of formal port Zero is not equal to width 1 of actual signal Zero.
+WARNING: File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 22.  For instance uut/RegisterFile/, width 2 of formal port RegWrite is not equal to width 1 of actual signal RegWrite.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-Stopped at time : 808051650 ns : File "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALUTest.v" Line 66
 # restart
 # run 1.00us
 Simulator is doing circuit initialization process.

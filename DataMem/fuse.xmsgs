@@ -8,7 +8,7 @@
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 34: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 36: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegWrite</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 40: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
@@ -17,7 +17,13 @@
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 42: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 44: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 44: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ALUOp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 46: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Zero</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 48: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RegWrite</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>

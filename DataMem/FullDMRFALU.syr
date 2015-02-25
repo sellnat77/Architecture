@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: FullDMRFALU.prj
 
@@ -104,15 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "../ALUWithControl/ALUWithControl.v" in library work
-Compiling verilog file "../ALUControl/ALUControl.v" in library work
-Module <ALUWithControl> compiled
 Compiling verilog file "../RF/RegisterFile.v" in library work
-Module <ALUControl> compiled
-Compiling verilog file "../FullALU/FullALU.v" in library work
-Module <RegisterFile> compiled
 Compiling verilog file "TwoOneMux5.v" in library work
-Module <FullALU> compiled
+Module <RegisterFile> compiled
 Compiling verilog file "TwoOneMux321.v" in library work
 Module <TwoOneMux5> compiled
 Compiling verilog file "TwoOneMux32.v" in library work
@@ -121,10 +115,12 @@ Compiling verilog file "SignExtender.v" in library work
 Module <TwoOneMux321> compiled
 Compiling verilog file "DataMem.v" in library work
 Module <SignExtender> compiled
-Compiling verilog file "../ALUAndRF/ALUAndRF.v" in library work
+Compiling verilog file "../ALUWithControl/ALUWithControl.v" in library work
 Module <DataMem> compiled
+Compiling verilog file "../ALUControl/ALUControl.v" in library work
+Module <ALUWithControl> compiled
 Compiling verilog file "FullDMRFALU.v" in library work
-Module <ALUAndRF> compiled
+Module <ALUControl> compiled
 Module <FullDMRFALU> compiled
 No errors in compilation
 Analysis of file <"FullDMRFALU.prj"> succeeded.
@@ -137,8 +133,6 @@ Analyzing hierarchy for module <FullDMRFALU> in library <work>.
 
 Analyzing hierarchy for module <DataMem> in library <work>.
 
-Analyzing hierarchy for module <ALUAndRF> in library <work>.
-
 Analyzing hierarchy for module <SignExtender> in library <work>.
 
 Analyzing hierarchy for module <TwoOneMux32> in library <work>.
@@ -147,13 +141,11 @@ Analyzing hierarchy for module <TwoOneMux321> in library <work>.
 
 Analyzing hierarchy for module <TwoOneMux5> in library <work>.
 
-Analyzing hierarchy for module <RegisterFile> in library <work>.
-
-Analyzing hierarchy for module <FullALU> in library <work>.
-
 Analyzing hierarchy for module <ALUControl> in library <work>.
 
 Analyzing hierarchy for module <ALUWithControl> in library <work>.
+
+Analyzing hierarchy for module <RegisterFile> in library <work>.
 
 
 =========================================================================
@@ -170,23 +162,6 @@ INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceed
 INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Module <DataMem> is correct for synthesis.
  
-Analyzing module <ALUAndRF> in library <work>.
-Module <ALUAndRF> is correct for synthesis.
- 
-Analyzing module <RegisterFile> in library <work>.
-Module <RegisterFile> is correct for synthesis.
- 
-Analyzing module <FullALU> in library <work>.
-Module <FullALU> is correct for synthesis.
- 
-Analyzing module <ALUControl> in library <work>.
-Module <ALUControl> is correct for synthesis.
- 
-Analyzing module <ALUWithControl> in library <work>.
-WARNING:Xst:905 - "../ALUWithControl/ALUWithControl.v" line 29: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <ALUOut>
-Module <ALUWithControl> is correct for synthesis.
- 
 Analyzing module <SignExtender> in library <work>.
 Module <SignExtender> is correct for synthesis.
  
@@ -198,6 +173,17 @@ Module <TwoOneMux321> is correct for synthesis.
  
 Analyzing module <TwoOneMux5> in library <work>.
 Module <TwoOneMux5> is correct for synthesis.
+ 
+Analyzing module <ALUControl> in library <work>.
+Module <ALUControl> is correct for synthesis.
+ 
+Analyzing module <ALUWithControl> in library <work>.
+WARNING:Xst:905 - "../ALUWithControl/ALUWithControl.v" line 29: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <ALUOut>
+Module <ALUWithControl> is correct for synthesis.
+ 
+Analyzing module <RegisterFile> in library <work>.
+Module <RegisterFile> is correct for synthesis.
  
 
 =========================================================================
@@ -246,15 +232,6 @@ Synthesizing Unit <TwoOneMux5>.
 Unit <TwoOneMux5> synthesized.
 
 
-Synthesizing Unit <RegisterFile>.
-    Related source file is "../RF/RegisterFile.v".
-    Found 32x32-bit dual-port RAM <Mram_RF> for signal <RF>.
-    Found 32x32-bit dual-port RAM <Mram_RF_ren> for signal <RF>.
-    Summary:
-	inferred   2 RAM(s).
-Unit <RegisterFile> synthesized.
-
-
 Synthesizing Unit <ALUControl>.
     Related source file is "../ALUControl/ALUControl.v".
 WARNING:Xst:647 - Input <ALUOp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -275,14 +252,13 @@ INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and 
 Unit <ALUWithControl> synthesized.
 
 
-Synthesizing Unit <FullALU>.
-    Related source file is "../FullALU/FullALU.v".
-Unit <FullALU> synthesized.
-
-
-Synthesizing Unit <ALUAndRF>.
-    Related source file is "../ALUAndRF/ALUAndRF.v".
-Unit <ALUAndRF> synthesized.
+Synthesizing Unit <RegisterFile>.
+    Related source file is "../RF/RegisterFile.v".
+    Found 32x32-bit dual-port RAM <Mram_RF> for signal <RF>.
+    Found 32x32-bit dual-port RAM <Mram_RF_ren> for signal <RF>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <RegisterFile> synthesized.
 
 
 Synthesizing Unit <FullDMRFALU>.
@@ -291,13 +267,9 @@ WARNING:Xst:647 - Input <Regsel> is never used. This port will be preserved and 
 WARNING:Xst:647 - Input <MemToRegSel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FuncCode<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <regsel_rnm0> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <RegToMux2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:653 - Signal <ReadData2Wire> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <MemToReg> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <ALUResultWire> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:1780 - Signal <ALUCtl> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <A> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <FullDMRFALU> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -328,10 +300,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <SignExtender> is unconnected in block <FullDMRFALU>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <TwoOneMux32> is unconnected in block <FullDMRFALU>.
-   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <DM_1_0> in Unit <DataMem> is equivalent to the following 7 FFs/Latches, which will be removed : <DM_1_1> <DM_1_2> <DM_1_3> <DM_1_4> <DM_1_5> <DM_1_6> <DM_1_7> 
 INFO:Xst:2261 - The FF/Latch <DM_2_0> in Unit <DataMem> is equivalent to the following 15 FFs/Latches, which will be removed : <DM_2_1> <DM_2_2> <DM_2_3> <DM_2_4> <DM_2_5> <DM_2_6> <DM_2_7> <DM_3_0> <DM_3_1> <DM_3_2> <DM_3_3> <DM_3_4> <DM_3_5> <DM_3_6> <DM_3_7> 
 WARNING:Xst:1710 - FF/Latch <DM_172_6> (without init value) has a constant value of 0 in block <DataMem>. This FF/Latch will be trimmed during the optimization process.
@@ -4496,134 +4464,134 @@ Optimizing unit <FullDMRFALU> ...
 Optimizing unit <ALUControl> ...
 
 Optimizing unit <ALUWithControl> ...
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF1> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF7> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF11> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF15> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF17> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF21> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF19> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF23> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF25> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF27> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF31> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF29> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF33> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF37> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF35> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF39> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF43> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF41> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF45> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF47> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF49> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF53> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF51> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF55> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF59> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF57> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF61> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF3>, <ALUAndRF/RegisterFile/Mram_RF63> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF10> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF18> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF20> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF22> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF24> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF28> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF26> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF30> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF34> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF32> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF36> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF40> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF38> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF42> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF46> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF44> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF48> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF50> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF52> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF56> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF54> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF58> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF62> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF60> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF2>, <ALUAndRF/RegisterFile/Mram_RF64> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren3> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren7> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren11> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren17> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren15> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren19> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren23> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren21> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren25> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren29> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren27> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren31> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren35> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren33> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren37> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren41> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren39> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren43> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren47> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren45> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren49> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren51> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren53> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren57> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren55> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren59> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren63> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren1>, <ALUAndRF/RegisterFile/Mram_RF_ren61> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren10> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren20> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren18> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren22> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren26> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren24> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren28> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren32> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren30> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren34> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren38> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren36> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren40> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren44> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren42> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren46> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren48> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren50> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren54> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren52> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren56> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren60> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren58> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren62> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <ALUAndRF/RegisterFile/Mram_RF_ren2>, <ALUAndRF/RegisterFile/Mram_RF_ren64> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren1> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren21> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren25> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren33> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren37> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren35> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren39> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren43> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren41> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren45> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren47> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren49> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren53> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren51> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren55> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren59> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren57> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren61> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren3>, <RegisterFile/Mram_RF_ren63> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren18> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren24> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren30> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren34> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren36> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren40> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren38> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren42> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren46> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren44> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren48> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren50> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren52> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren56> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren54> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren58> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren60> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF_ren2>, <RegisterFile/Mram_RF_ren64> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF21> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF25> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF35> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF33> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF37> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF41> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF39> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF43> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF47> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF45> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF49> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF51> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF53> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF57> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF55> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF59> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF63> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF1>, <RegisterFile/Mram_RF61> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF18> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF24> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF30> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF34> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF38> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF36> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF40> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF44> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF42> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF46> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF48> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF50> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF54> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF52> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF56> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF60> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF58> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <RegisterFile/Mram_RF2>, <RegisterFile/Mram_RF64> are equivalent, second RAM is removed
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block FullDMRFALU, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block FullDMRFALU, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -4658,11 +4626,11 @@ Design Statistics
 # IOs                              : 46
 
 Cell Usage :
-# BELS                             : 224
+# BELS                             : 266
 #      GND                         : 1
 #      LUT2                        : 4
-#      LUT3                        : 37
-#      LUT4                        : 78
+#      LUT3                        : 53
+#      LUT4                        : 104
 #      MUXCY                       : 71
 #      VCC                         : 1
 #      XORCY                       : 32
@@ -4673,8 +4641,8 @@ Cell Usage :
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 21
-#      IBUF                        : 20
+# IO Buffers                       : 38
+#      IBUF                        : 37
 #      OBUF                        : 1
 =========================================================================
 
@@ -4683,13 +4651,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-5 
 
- Number of Slices:                       63  out of   4656     1%  
+ Number of Slices:                       87  out of   4656     1%  
  Number of Slice Flip Flops:             35  out of   9312     0%  
- Number of 4 input LUTs:                127  out of   9312     1%  
-    Number used as logic:               119
+ Number of 4 input LUTs:                169  out of   9312     1%  
+    Number used as logic:               161
     Number used as RAMs:                  8
  Number of IOs:                          46
- Number of bonded IOBs:                  22  out of    232     9%  
+ Number of bonded IOBs:                  39  out of    232    16%  
  Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
@@ -4710,13 +4678,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
-Clock Signal                                                                                                    | Clock buffer(FF name)                                     | Load  |
-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
-clk                                                                                                             | BUFGP                                                     | 4     |
-ALUAndRF/FullALU/ALUControl/ALUctl_not0001(ALUAndRF/FullALU/ALUControl/ALUctl_not00012:O)                       | NONE(*)(ALUAndRF/FullALU/ALUControl/ALUctl_2)             | 3     |
-ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021(ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021:O)| BUFG(*)(ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_31)| 32    |
-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+------------------------------------------------------------------------------+------------------------------------------+-------+
+Clock Signal                                                                  | Clock buffer(FF name)                    | Load  |
+------------------------------------------------------------------------------+------------------------------------------+-------+
+clk                                                                           | BUFGP                                    | 4     |
+ALUControl/ALUctl_not0001(ALUControl/ALUctl_not00012:O)                       | NONE(*)(ALUControl/ALUctl_2)             | 3     |
+ALUWithControl/old_ALUOut_11_not00021(ALUWithControl/old_ALUOut_11_not00021:O)| BUFG(*)(ALUWithControl/_old_ALUOut_11_31)| 32    |
+------------------------------------------------------------------------------+------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -4731,7 +4699,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 10.563ns
+   Minimum input arrival time before clock: 10.757ns
    Maximum output required time after clock: 6.347ns
    Maximum combinational path delay: No path found
 
@@ -4745,119 +4713,119 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              2.971ns (Levels of Logic = 2)
   Source:            rd<4> (PAD)
-  Destination:       ALUAndRF/RegisterFile/Mram_RF3 (RAM)
+  Destination:       RegisterFile/Mram_RF_ren3 (RAM)
   Destination Clock: clk rising
 
-  Data Path: rd<4> to ALUAndRF/RegisterFile/Mram_RF3
+  Data Path: rd<4> to RegisterFile/Mram_RF_ren3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   1.106   0.532  rd_4_IBUF (WriteReg<4>)
      LUT2:I0->O            2   0.612   0.380  write_ctrl1 (write_ctrl1)
-     RAM16X1D:WE               0.341          ALUAndRF/RegisterFile/Mram_RF2
+     RAM16X1D:WE               0.341          RegisterFile/Mram_RF_ren2
     ----------------------------------------
     Total                      2.971ns (2.059ns logic, 0.912ns route)
                                        (69.3% logic, 30.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021'
-  Total number of paths / destination ports: 21888 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUWithControl/old_ALUOut_11_not00021'
+  Total number of paths / destination ports: 23568 / 32
 -------------------------------------------------------------------------
-Offset:              10.563ns (Levels of Logic = 38)
-  Source:            rs<1> (PAD)
-  Destination:       ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_28 (LATCH)
-  Destination Clock: ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021 falling
+Offset:              10.757ns (Levels of Logic = 38)
+  Source:            rt<0> (PAD)
+  Destination:       ALUWithControl/_old_ALUOut_11_28 (LATCH)
+  Destination Clock: ALUWithControl/old_ALUOut_11_not00021 falling
 
-  Data Path: rs<1> to ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_28
+  Data Path: rt<0> to ALUWithControl/_old_ALUOut_11_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.106   0.380  rs_1_IBUF (rs_1_IBUF)
-     RAM16X1D:DPRA1->DPO   32   0.612   1.142  ALUAndRF/RegisterFile/Mram_RF3 (N9)
-     LUT3:I1->O           35   0.612   1.104  inst_LPM_MUX31111 (ALUAndRF/Data1<0>)
-     LUT4:I2->O            1   0.612   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<0> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<0> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30>)
-     MUXCY:CI->O           1   0.399   0.360  ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31> (ALUAndRF/FullALU/ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31>)
-     LUT4:I3->O            8   0.612   0.795  ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_mux0001<0>21 (ALUAndRF/FullALU/ALUWithControl/N32)
-     LUT4:I0->O            1   0.612   0.000  ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_mux0001<8> (ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_mux0001<8>)
-     LD:D                      0.268          ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_8
+     IBUF:I->O             2   1.106   0.380  rt_0_IBUF (rt_0_IBUF)
+     RAM16X1D:DPRA0->DPO    1   0.612   0.426  RegisterFile/Mram_RF_ren3 (N9)
+     LUT3:I1->O           17   0.612   0.923  TwoOneMux32/out<31>_SW2 (N176)
+     LUT3:I2->O            4   0.612   0.529  TwoOneMux32/out<1> (B<1>)
+     LUT4:I2->O            1   0.612   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<1> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30>)
+     MUXCY:CI->O           1   0.399   0.360  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31>)
+     LUT4:I3->O            8   0.612   0.795  ALUWithControl/old_ALUOut_11_mux0001<0>21 (ALUWithControl/N32)
+     LUT4:I0->O            1   0.612   0.000  ALUWithControl/old_ALUOut_11_mux0001<8> (ALUWithControl/old_ALUOut_11_mux0001<8>)
+     LD:D                      0.268          ALUWithControl/_old_ALUOut_11_8
     ----------------------------------------
-    Total                     10.563ns (6.782ns logic, 3.781ns route)
-                                       (64.2% logic, 35.8% route)
+    Total                     10.757ns (7.343ns logic, 3.414ns route)
+                                       (68.3% logic, 31.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUAndRF/FullALU/ALUControl/ALUctl_not0001'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUControl/ALUctl_not0001'
   Total number of paths / destination ports: 11 / 3
 -------------------------------------------------------------------------
 Offset:              2.637ns (Levels of Logic = 2)
   Source:            FuncCode<0> (PAD)
-  Destination:       ALUAndRF/FullALU/ALUControl/ALUctl_2 (LATCH)
-  Destination Clock: ALUAndRF/FullALU/ALUControl/ALUctl_not0001 falling
+  Destination:       ALUControl/ALUctl_2 (LATCH)
+  Destination Clock: ALUControl/ALUctl_not0001 falling
 
-  Data Path: FuncCode<0> to ALUAndRF/FullALU/ALUControl/ALUctl_2
+  Data Path: FuncCode<0> to ALUControl/ALUctl_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.106   0.651  FuncCode_0_IBUF (FuncCode_0_IBUF)
-     LUT3:I0->O            1   0.612   0.000  ALUAndRF/FullALU/ALUControl/ALUctl_not000111 (ALUAndRF/FullALU/ALUControl/N0)
-     LD:D                      0.268          ALUAndRF/FullALU/ALUControl/ALUctl_2
+     LUT3:I0->O            1   0.612   0.000  ALUControl/ALUctl_not000111 (ALUControl/N0)
+     LD:D                      0.268          ALUControl/ALUctl_2
     ----------------------------------------
     Total                      2.637ns (1.986ns logic, 0.651ns route)
                                        (75.3% logic, 24.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUWithControl/old_ALUOut_11_not00021'
   Total number of paths / destination ports: 32 / 1
 -------------------------------------------------------------------------
 Offset:              6.347ns (Levels of Logic = 10)
-  Source:            ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_8 (LATCH)
+  Source:            ALUWithControl/_old_ALUOut_11_8 (LATCH)
   Destination:       Zero (PAD)
-  Source Clock:      ALUAndRF/FullALU/ALUWithControl/old_ALUOut_11_not00021 falling
+  Source Clock:      ALUWithControl/old_ALUOut_11_not00021 falling
 
-  Data Path: ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_8 to Zero
+  Data Path: ALUWithControl/_old_ALUOut_11_8 to Zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.588   0.509  ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_8 (ALUAndRF/FullALU/ALUWithControl/_old_ALUOut_11_8)
-     LUT4:I0->O            1   0.612   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_lut<0> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<0> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<1> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<2> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<3> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<4> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<5> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<6> (ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<6>)
-     MUXCY:CI->O           1   0.399   0.357  ALUAndRF/FullALU/ALUWithControl/Zero_cmp_eq0000_wg_cy<7> (Zero_OBUF)
+     LD:G->Q               1   0.588   0.509  ALUWithControl/_old_ALUOut_11_8 (ALUWithControl/_old_ALUOut_11_8)
+     LUT4:I0->O            1   0.612   0.000  ALUWithControl/Zero_cmp_eq0000_wg_lut<0> (ALUWithControl/Zero_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<0> (ALUWithControl/Zero_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<1> (ALUWithControl/Zero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<2> (ALUWithControl/Zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<3> (ALUWithControl/Zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<4> (ALUWithControl/Zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<5> (ALUWithControl/Zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<6> (ALUWithControl/Zero_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  ALUWithControl/Zero_cmp_eq0000_wg_cy<7> (Zero_OBUF)
      OBUF:I->O                 3.169          Zero_OBUF (Zero)
     ----------------------------------------
     Total                      6.347ns (5.481ns logic, 0.866ns route)
@@ -4866,14 +4834,14 @@ Offset:              6.347ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 48.00 secs
-Total CPU time to Xst completion: 47.82 secs
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 34.34 secs
  
 --> 
 
 Total memory usage is 340480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 4125 (   0 filtered)
+Number of warnings : 4119 (   0 filtered)
 Number of infos    :  138 (   0 filtered)
 

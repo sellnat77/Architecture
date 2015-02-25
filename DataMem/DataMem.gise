@@ -71,7 +71,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424839853" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1424839853">
+    <transform xil_pn:end_ts="1424841017" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1424841017">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUAndRF/ALUAndRF.v"/>
@@ -100,7 +100,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424839856" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1424839856">
+    <transform xil_pn:end_ts="1424841021" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1424841021">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUAndRF/ALUAndRF.v"/>
@@ -117,11 +117,9 @@
       <outfile xil_pn:name="TwoOneMux321.v"/>
       <outfile xil_pn:name="TwoOneMux5.v"/>
     </transform>
-    <transform xil_pn:end_ts="1424839860" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4158840813862483275" xil_pn:start_ts="1424839856">
+    <transform xil_pn:end_ts="1424841024" xil_pn:in_ck="-3674587422470017493" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4158840813862483275" xil_pn:start_ts="1424841021">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FullDMRFALUTest_beh.prj"/>
       <outfile xil_pn:name="FullDMRFALUTest_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -129,11 +127,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1424839861" xil_pn:in_ck="-714578979149616904" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4585690129268649774" xil_pn:start_ts="1424839860">
+    <transform xil_pn:end_ts="1424841025" xil_pn:in_ck="-714578979149616904" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4585690129268649774" xil_pn:start_ts="1424841024">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FullDMRFALUTest_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -166,10 +162,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424840026" xil_pn:in_ck="3918461772494458988" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7382580872104965839" xil_pn:start_ts="1424839975">
+    <transform xil_pn:end_ts="1424840982" xil_pn:in_ck="3918461772494458988" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7382580872104965839" xil_pn:start_ts="1424840944">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="FullDMRFALU.lso"/>
       <outfile xil_pn:name="FullDMRFALU.ngc"/>

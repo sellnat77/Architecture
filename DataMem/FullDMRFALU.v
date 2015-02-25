@@ -32,8 +32,6 @@ module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,
 	 
 
 	DataMem DataMem(.clk(clk),.Address(ALUResultWire),.WriteData(ReadData2Wire),.MemWrite(MemWrite),.MemRead(MemRead),.ReadData(ReadDataOut));
-	 
-	ALUAndRF ALUAndRF(.clk(clk),.Read1(rs),.Read2(rt),.WriteReg(WriteReg),.RegWrite(RegWrite),.WriteData(ReadData),.FuncCode(FuncCode),.ALUOp(ALUOp),.Zero(Zero),.ALUOut(ALUOut));
 
 	SignExtender SignExtender(.SEin(SEin),.SEout(SEOut));
 	
@@ -42,5 +40,11 @@ module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,
 	TwoOneMux321 TwoOneMux321(.A(ALUOut),.B(ReadDataOut),.sel(MemToReg),.out(ReadData));
 	
 	TwoOneMux5 TwoOneMux5(.A(rt),.B(rd),.sel(RegSel),.out(WriteReg));
+	
+	ALUControl ALUControl(.ALUOp(ALUOp),.FuncCode(FuncCode),.ALUctl(ALUCtl));
+	
+	ALUWithControl ALUWithControl(.ALUctl(ALUCtl),.A(A),.B(B),.ALUOut(ALUOut),.Zero(Zero));
+	
+	RegisterFile RegisterFile(.clk(clk),.Read1(rs),.Read2(rt),.WriteReg(WriteReg),.RegWrite(RegWrite),.WriteData(ReadData),.Data1(A),.Data2(RegToMux2));
 
 endmodule
