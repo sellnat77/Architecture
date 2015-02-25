@@ -33,7 +33,7 @@ module RegisterFile(
     input [4:0] Read1;
     input [4:0] Read2;
     input [4:0] WriteReg;
-	 input [1:0]RegWrite;
+	 input RegWrite;
     input [31:0] WriteData;
     output [31:0]Data1;
     output [31:0]Data2;

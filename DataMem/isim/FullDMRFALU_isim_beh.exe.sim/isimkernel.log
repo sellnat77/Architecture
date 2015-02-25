@@ -1,0 +1,29 @@
+Command line:
+   FullDMRFALU_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51811
+
+Wed Feb 25 09:16:44 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 374.166 Meg
+
+ Total Signals          : 67
+ Total Nets             : 387
+ Total Signal Drivers   : 19
+ Total Blocks           : 10
+ Total Primitive Blocks : 9
+ Total Processes        : 26
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 3640
+Total Line Count : 72
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 374.166 Meg
+
+Wed Feb 25 09:16:47 2015
+

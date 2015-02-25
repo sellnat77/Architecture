@@ -21,7 +21,7 @@
 module TwoOneMux32(
     input [31:0] A,
     input [31:0] B,
-    input [1:0] sel,
+    input sel,
     output [31:0] out
     );
 

@@ -15,23 +15,16 @@ Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v"
 Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest.v" Line 62: Size mismatch in connection of port <ALUOut>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 37: Size mismatch in connection of port <Address>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 41: Size mismatch in connection of port <sel>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 43: Size mismatch in connection of port <sel>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 45: Size mismatch in connection of port <sel>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 47: Size mismatch in connection of port <FuncCode>. Formal port size is 4-bit while actual signal size is 6-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 49: Size mismatch in connection of port <Zero>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 51: Size mismatch in connection of port <RegWrite>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:329 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 47: Target <ALUOut> of concurrent assignment or output port connection should be a net type.
 Completed static elaboration
-Compiling module DataMem
-Compiling module SignExtender
-Compiling module TwoOneMux32
-Compiling module TwoOneMux321
 Compiling module TwoOneMux5
+Compiling module RegisterFile
+Compiling module TwoOneMux32
+Compiling module SignExtender
 Compiling module ALUControl
 Compiling module ALUWithControl
-Compiling module RegisterFile
+Compiling module DataMem
+Compiling module TwoOneMux321
 Compiling module FullDMRFALU
 Compiling module FullRFDMALUTest
 Compiling module glbl
@@ -39,5 +32,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 11 Verilog Units
 Built simulation executable C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest_isim_beh.exe
-Fuse Memory Usage: 30332 KB
-Fuse CPU Usage: 578 ms
+Fuse Memory Usage: 30352 KB
+Fuse CPU Usage: 609 ms

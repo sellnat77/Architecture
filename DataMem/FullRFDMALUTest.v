@@ -29,7 +29,7 @@ module FullRFDMALUTest;
 	reg [4:0] rt;
 	reg [4:0] rd;
 	reg [15:0] SEin;
-	reg [5:0] FuncCode;
+	reg [3:0] FuncCode;
 	reg Regsel;
 	reg ALUsel;
 	reg [1:0]ALUOp;
@@ -41,7 +41,7 @@ module FullRFDMALUTest;
 
 	// Outputs
 	wire Zero;
-	wire ALUOut;
+	wire [31:0]ALUOut;
 
 	// Instantiate the Unit Under Test (UUT)
 	FullDMRFALU uut (
@@ -89,29 +89,29 @@ module FullRFDMALUTest;
 		// Add stimulus here
 		rs = 0;
 		rt = 0;
-		rd = 0;
+		rd = 5;
 		SEin = 16'h0014;
 		FuncCode = 0;
 		Regsel = 1;
 		ALUsel = 1;
-		ALUOp = 0;
-		MemWrite = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
 		MemRead = 1;
-		MemToRegSel = 1;
+		MemToRegSel = 0;
 		RegWrite = 1;
 		
 		#100;
 		rs = 0;
 		rt = 0;
-		rd = 0;
+		rd = 10;
 		SEin = 16'h0028;
 		FuncCode = 0;
 		Regsel = 1;
 		ALUsel = 1;
-		ALUOp = 0;
-		MemWrite = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
 		MemRead = 1;
-		MemToRegSel = 1;
+		MemToRegSel = 0;
 		RegWrite = 1;
 ///////////////////////////////////////////////////
 		#100;
@@ -123,9 +123,9 @@ module FullRFDMALUTest;
 		Regsel =1;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		MemWrite = 1;
-		MemRead =1;
-		MemToRegSel = 1;
+		MemWrite = 0;
+		MemRead =0;
+		MemToRegSel = 0;
 		RegWrite = 1;
 			
 

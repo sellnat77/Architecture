@@ -1,0 +1,91 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'FullDMRFALU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o FullDMRFALU_map.ncd FullDMRFALU.ngd FullDMRFALU.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Feb 25 08:38:54 2015
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Running unrelated packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ALUControl/ALUctl_not0001
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+ERROR:Pack:2310 - Too many comps of type "SLICEL" found to fit this device.
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      2
+Number of warnings:    1
+Logic Utilization:
+  Total Number Slice Registers:       2,115 out of   9,312   22%
+    Number used as Flip Flops:        2,080
+    Number used as Latches:              35
+  Number of 4 input LUTs:            10,383 out of   9,312  111% (OVERMAPPED)
+Logic Distribution:
+  Number of occupied Slices:          5,990 out of   4,656  128% (OVERMAPPED)
+    Number of Slices containing only related logic:   5,990 out of   5,990 100%
+    Number of Slices containing unrelated logic:          0 out of   5,990   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:      10,383 out of   9,312  111% (OVERMAPPED)
+    Number used as logic:            10,127
+    Number used for Dual Port RAMs:     256
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 76 out of     232   32%
+    IOB Latches:                         32
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                4.55
+
+Peak Memory Usage:  251 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "FullDMRFALU_map.mrp" for details.
+Problem encountered during the packing phase.

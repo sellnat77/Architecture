@@ -22,8 +22,8 @@ module DataMem(
     input clk,
     input  [31:0] Address,
     input  [31:0] WriteData,
-    input  [1:0]  MemWrite,
-    input  [1:0]  MemRead,
+    input  MemWrite,
+    input  MemRead,
 	 output reg [31:0] ReadData
 	 );
 	 reg [7:0] DM [0:255];

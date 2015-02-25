@@ -23,7 +23,7 @@ module ALUWithControl(ALUctl,A,B,ALUOut,Zero);
     input [31:0] B;
     input [3:0] ALUctl;
     output reg [31:0] ALUOut;
-    output reg [1:0] Zero;
+    output reg  Zero;
 	 
 	 always @(A,B,ALUctl)
 	 begin
