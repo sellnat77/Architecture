@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: FullDMRFALU.prj
 
@@ -131,21 +131,21 @@ Analysis of file <"FullDMRFALU.prj"> succeeded.
 =========================================================================
 Analyzing hierarchy for module <FullDMRFALU> in library <work>.
 
-Analyzing hierarchy for module <DataMem> in library <work>.
+Analyzing hierarchy for module <TwoOneMux5> in library <work>.
 
-Analyzing hierarchy for module <SignExtender> in library <work>.
+Analyzing hierarchy for module <RegisterFile> in library <work>.
 
 Analyzing hierarchy for module <TwoOneMux32> in library <work>.
 
-Analyzing hierarchy for module <TwoOneMux321> in library <work>.
-
-Analyzing hierarchy for module <TwoOneMux5> in library <work>.
+Analyzing hierarchy for module <SignExtender> in library <work>.
 
 Analyzing hierarchy for module <ALUControl> in library <work>.
 
 Analyzing hierarchy for module <ALUWithControl> in library <work>.
 
-Analyzing hierarchy for module <RegisterFile> in library <work>.
+Analyzing hierarchy for module <DataMem> in library <work>.
+
+Analyzing hierarchy for module <TwoOneMux321> in library <work>.
 
 
 =========================================================================
@@ -154,24 +154,17 @@ Analyzing hierarchy for module <RegisterFile> in library <work>.
 Analyzing top module <FullDMRFALU>.
 Module <FullDMRFALU> is correct for synthesis.
  
-Analyzing module <DataMem> in library <work>.
-WARNING:Xst:2319 - "DataMem.v" line 33: Signal DM in initial block is partially initialized. The initialization will be ignored.
-INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-Module <DataMem> is correct for synthesis.
+Analyzing module <TwoOneMux5> in library <work>.
+Module <TwoOneMux5> is correct for synthesis.
  
-Analyzing module <SignExtender> in library <work>.
-Module <SignExtender> is correct for synthesis.
+Analyzing module <RegisterFile> in library <work>.
+Module <RegisterFile> is correct for synthesis.
  
 Analyzing module <TwoOneMux32> in library <work>.
 Module <TwoOneMux32> is correct for synthesis.
  
-Analyzing module <TwoOneMux321> in library <work>.
-Module <TwoOneMux321> is correct for synthesis.
- 
-Analyzing module <TwoOneMux5> in library <work>.
-Module <TwoOneMux5> is correct for synthesis.
+Analyzing module <SignExtender> in library <work>.
+Module <SignExtender> is correct for synthesis.
  
 Analyzing module <ALUControl> in library <work>.
 Module <ALUControl> is correct for synthesis.
@@ -181,8 +174,15 @@ WARNING:Xst:905 - "../ALUWithControl/ALUWithControl.v" line 29: One or more sign
    <ALUOut>
 Module <ALUWithControl> is correct for synthesis.
  
-Analyzing module <RegisterFile> in library <work>.
-Module <RegisterFile> is correct for synthesis.
+Analyzing module <DataMem> in library <work>.
+WARNING:Xst:2319 - "DataMem.v" line 33: Signal DM in initial block is partially initialized. The initialization will be ignored.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <DataMem> is correct for synthesis.
+ 
+Analyzing module <TwoOneMux321> in library <work>.
+Module <TwoOneMux321> is correct for synthesis.
  
 
 =========================================================================
@@ -191,29 +191,18 @@ Module <RegisterFile> is correct for synthesis.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <DataMem>.
-    Related source file is "DataMem.v".
-WARNING:Xst:647 - Input <Address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 32-bit register for signal <ReadData>.
-    Found 8-bit 256-to-1 multiplexer for signal <$varindex0000> created at line 65.
-    Found 8-bit 256-to-1 multiplexer for signal <$varindex0001> created at line 66.
-    Found 8-bit 256-to-1 multiplexer for signal <$varindex0002> created at line 67.
-    Found 8-bit 256-to-1 multiplexer for signal <$varindex0003> created at line 68.
-    Found 8-bit adder carry out for signal <COND_5$addsub0000>.
-    Found 8-bit adder carry out for signal <COND_7$addsub0000>.
-    Found 8-bit adder carry out for signal <COND_9$addsub0000>.
-    Found 2048-bit register for signal <DM>.
-INFO:Xst:738 - HDL ADVISOR - 2048 flip-flops were inferred for signal <DM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+Synthesizing Unit <TwoOneMux5>.
+    Related source file is "TwoOneMux5.v".
+Unit <TwoOneMux5> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "../RF/RegisterFile.v".
+    Found 32x32-bit dual-port RAM <Mram_RF> for signal <RF>.
+    Found 32x32-bit dual-port RAM <Mram_RF_ren> for signal <RF>.
     Summary:
-	inferred 2080 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
-	inferred  32 Multiplexer(s).
-Unit <DataMem> synthesized.
-
-
-Synthesizing Unit <SignExtender>.
-    Related source file is "SignExtender.v".
-Unit <SignExtender> synthesized.
+	inferred   2 RAM(s).
+Unit <RegisterFile> synthesized.
 
 
 Synthesizing Unit <TwoOneMux32>.
@@ -221,14 +210,9 @@ Synthesizing Unit <TwoOneMux32>.
 Unit <TwoOneMux32> synthesized.
 
 
-Synthesizing Unit <TwoOneMux321>.
-    Related source file is "TwoOneMux32.v".
-Unit <TwoOneMux321> synthesized.
-
-
-Synthesizing Unit <TwoOneMux5>.
-    Related source file is "TwoOneMux5.v".
-Unit <TwoOneMux5> synthesized.
+Synthesizing Unit <SignExtender>.
+    Related source file is "SignExtender.v".
+Unit <SignExtender> synthesized.
 
 
 Synthesizing Unit <ALUControl>.
@@ -241,28 +225,43 @@ Unit <ALUControl> synthesized.
 
 Synthesizing Unit <ALUWithControl>.
     Related source file is "../ALUWithControl/ALUWithControl.v".
-WARNING:Xst:737 - Found 32-bit latch for signal <$old_ALUOut_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <$old_ALUOut_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 32-bit addsub for signal <old_ALUOut_11$addsub0000>.
-    Found 32-bit comparator less for signal <old_ALUOut_11$cmp_lt0000> created at line 35.
+    Found 32-bit addsub for signal <old_ALUOut_1$addsub0000>.
+    Found 32-bit comparator less for signal <old_ALUOut_1$cmp_lt0000> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <ALUWithControl> synthesized.
 
 
-Synthesizing Unit <RegisterFile>.
-    Related source file is "../RF/RegisterFile.v".
-    Found 32x32-bit dual-port RAM <Mram_RF> for signal <RF>.
-    Found 32x32-bit dual-port RAM <Mram_RF_ren> for signal <RF>.
+Synthesizing Unit <DataMem>.
+    Related source file is "DataMem.v".
+WARNING:Xst:647 - Input <Address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <ReadData>.
+    Found 8-bit 256-to-1 multiplexer for signal <$varindex0000> created at line 65.
+    Found 8-bit 256-to-1 multiplexer for signal <$varindex0001> created at line 66.
+    Found 8-bit 256-to-1 multiplexer for signal <$varindex0002> created at line 67.
+    Found 8-bit 256-to-1 multiplexer for signal <$varindex0003> created at line 68.
+    Found 8-bit adder carry out for signal <COND_4$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_6$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_8$addsub0000>.
+    Found 2048-bit register for signal <DM>.
+INFO:Xst:738 - HDL ADVISOR - 2048 flip-flops were inferred for signal <DM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Summary:
-	inferred   2 RAM(s).
-Unit <RegisterFile> synthesized.
+	inferred 2080 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <DataMem> synthesized.
+
+
+Synthesizing Unit <TwoOneMux321>.
+    Related source file is "TwoOneMux32.v".
+Unit <TwoOneMux321> synthesized.
 
 
 Synthesizing Unit <FullDMRFALU>.
     Related source file is "FullDMRFALU.v".
-WARNING:Xst:647 - Input <FuncCode<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <FullDMRFALU> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -303,7 +302,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RF> will be implemented on LUTs eith
     | Port A                                                              |
     |     aspect ratio   | 32-word x 32-bit                    |          |
     |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <_cmp_eq0000>   | high     |
+    |     weA            | connected to signal <RegWrite>      | high     |
     |     addrA          | connected to signal <WriteReg>      |          |
     |     diA            | connected to signal <WriteData>     |          |
     -----------------------------------------------------------------------
@@ -319,7 +318,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RF_ren> will be implemented on LUTs 
     | Port A                                                              |
     |     aspect ratio   | 32-word x 32-bit                    |          |
     |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <_cmp_eq0000>   | high     |
+    |     weA            | connected to signal <RegWrite>      | high     |
     |     addrA          | connected to signal <WriteReg>      |          |
     |     diA            | connected to signal <WriteData>     |          |
     -----------------------------------------------------------------------
@@ -369,38 +368,6 @@ Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block FullDMRFALU, actual ratio is 116.
 Optimizing block <FullDMRFALU> to meet ratio 100 (+ 5) of 4656 slices :
 WARNING:Xst:2254 - Area constraint could not be met for block <FullDMRFALU>, final ratio is 116.
-Latch ALUWithControl/_old_ALUOut_11_31 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_30 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_29 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_28 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_27 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_26 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_25 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_24 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_23 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_22 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_21 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_20 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_19 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_18 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_17 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_16 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_15 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_14 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_13 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_12 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_11 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_10 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_9 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_8 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_7 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_6 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_5 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_4 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_3 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_2 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_1 has been replicated 1 time(s) to handle iob=true attribute.
-Latch ALUWithControl/_old_ALUOut_11_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -435,39 +402,39 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 80
+# IOs                              : 45
 
 Cell Usage :
-# BELS                             : 14263
+# BELS                             : 14286
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 834
-#      LUT3                        : 4498
+#      INV                         : 13
+#      LUT2                        : 339
+#      LUT3                        : 4503
 #      LUT3_D                      : 8
 #      LUT3_L                      : 8
-#      LUT4                        : 4613
-#      LUT4_D                      : 80
-#      LUT4_L                      : 86
+#      LUT4                        : 5118
+#      LUT4_D                      : 72
+#      LUT4_L                      : 70
 #      MUXCY                       : 71
-#      MUXF5                       : 2206
+#      MUXF5                       : 2226
 #      MUXF6                       : 1056
 #      MUXF7                       : 512
 #      MUXF8                       : 256
 #      VCC                         : 1
 #      XORCY                       : 32
-# FlipFlops/Latches                : 2147
+# FlipFlops/Latches                : 2115
 #      FD                          : 40
 #      FDE                         : 24
 #      FDS                         : 2016
-#      LD                          : 67
+#      LD                          : 35
 # RAMS                             : 128
 #      RAM16X1D                    : 128
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 75
-#      IBUF                        : 42
-#      OBUF                        : 33
+# IO Buffers                       : 42
+#      IBUF                        : 41
+#      OBUF                        : 1
 =========================================================================
 
 Device utilization summary:
@@ -477,12 +444,11 @@ Selected Device : 3s500efg320-5
 
  Number of Slices:                     5525  out of   4656   118% (*) 
  Number of Slice Flip Flops:           2115  out of   9312    22%  
- Number of 4 input LUTs:              10384  out of   9312   111% (*) 
-    Number used as logic:             10128
+ Number of 4 input LUTs:              10387  out of   9312   111% (*) 
+    Number used as logic:             10131
     Number used as RAMs:                256
- Number of IOs:                          80
- Number of bonded IOBs:                  76  out of    232    32%  
-    IOB Flip Flops:                      32
+ Number of IOs:                          45
+ Number of bonded IOBs:                  43  out of    232    18%  
  Number of GCLKs:                         2  out of     24     8%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
@@ -505,13 +471,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------------------------------------------------+------------------------------------------+-------+
-Clock Signal                                                                  | Clock buffer(FF name)                    | Load  |
-------------------------------------------------------------------------------+------------------------------------------+-------+
-clk                                                                           | BUFGP                                    | 2208  |
-ALUControl/ALUctl_not0001(ALUControl/ALUctl_not00012:O)                       | NONE(*)(ALUControl/ALUctl_2)             | 3     |
-ALUWithControl/old_ALUOut_11_not00021(ALUWithControl/old_ALUOut_11_not00021:O)| BUFG(*)(ALUWithControl/_old_ALUOut_11_31)| 64    |
-------------------------------------------------------------------------------+------------------------------------------+-------+
+----------------------------------------------------------------------------+-----------------------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)                   | Load  |
+----------------------------------------------------------------------------+-----------------------------------------+-------+
+clk                                                                         | BUFGP                                   | 2208  |
+ALUControl/ALUctl_not0001(ALUControl/ALUctl_not00012:O)                     | NONE(*)(ALUControl/ALUctl_2)            | 3     |
+ALUWithControl/old_ALUOut_1_not00021(ALUWithControl/old_ALUOut_1_not00021:O)| BUFG(*)(ALUWithControl/_old_ALUOut_1_31)| 32    |
+----------------------------------------------------------------------------+-----------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -527,7 +493,7 @@ Speed Grade: -5
 
    Minimum period: 7.785ns (Maximum Frequency: 128.455MHz)
    Minimum input arrival time before clock: 11.579ns
-   Maximum output required time after clock: 7.022ns
+   Maximum output required time after clock: 7.025ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -537,7 +503,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 7.785ns (frequency: 128.455MHz)
-  Total number of paths / destination ports: 26936 / 4224
+  Total number of paths / destination ports: 26904 / 4224
 -------------------------------------------------------------------------
 Delay:               7.785ns (Levels of Logic = 4)
   Source:            RegisterFile/Mram_RF_ren15 (RAM)
@@ -553,7 +519,7 @@ Delay:               7.785ns (Levels of Logic = 4)
      LUT3:I1->O            1   0.612   0.426  inst_LPM_MUX711_1 (inst_LPM_MUX711)
      LUT3:I1->O            6   0.612   0.572  DataMem/DM_103_mux0000<7>111 (DataMem/N7100)
      LUT4_D:I3->O         63   0.612   1.084  DataMem/DM_103_mux0000<7>11 (DataMem/N01)
-     LUT4:I3->O            1   0.612   0.357  DataMem/DM_39_mux0000<7>_SW0 (N2554)
+     LUT4:I3->O            1   0.612   0.357  DataMem/DM_39_mux0000<7>_SW0 (N2538)
      FDS:S                     0.795          DataMem/DM_39_7
     ----------------------------------------
     Total                      7.785ns (4.897ns logic, 2.888ns route)
@@ -561,81 +527,80 @@ Delay:               7.785ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 85032 / 5368
+  Total number of paths / destination ports: 80376 / 5368
 -------------------------------------------------------------------------
-Offset:              10.537ns (Levels of Logic = 7)
-  Source:            MemWrite<1> (PAD)
-  Destination:       DataMem/DM_33_7 (FF)
+Offset:              8.931ns (Levels of Logic = 6)
+  Source:            rt<2> (PAD)
+  Destination:       DataMem/DM_255_7 (FF)
   Destination Clock: clk rising
 
-  Data Path: MemWrite<1> to DataMem/DM_33_7
+  Data Path: rt<2> to DataMem/DM_255_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            81   1.106   1.238  MemWrite_1_IBUF (MemWrite_1_IBUF)
-     LUT2:I0->O          341   0.612   1.308  DataMem/DM_2_cmp_eq00001 (DataMem/DM_2_cmp_eq0000)
-     LUT4:I0->O           18   0.612   1.060  DataMem/DM_33_mux0000<0>4_SW1 (N5325)
-     LUT4:I0->O           16   0.612   0.948  DataMem/DM_33_mux0000<0>4 (DataMem/N876)
-     LUT2:I1->O            1   0.612   0.000  DataMem/DM_161_mux0000<0>31_SW2_F (N6121)
-     MUXF5:I0->O           1   0.278   0.387  DataMem/DM_161_mux0000<0>31_SW2 (N5882)
-     LUT4:I2->O            1   0.612   0.357  DataMem/DM_33_mux0000<0>_SW0 (N3527)
-     FDS:S                     0.795          DataMem/DM_33_0
+     IBUF:I->O            65   1.106   1.082  rt_2_IBUF (rt_2_IBUF)
+     RAM16X1D:DPRA2->DPO    2   0.612   0.449  RegisterFile/Mram_RF_ren3 (N9)
+     LUT3:I1->O            1   0.612   0.426  inst_LPM_MUX1111_1 (inst_LPM_MUX1111)
+     LUT3:I1->O            6   0.612   0.572  DataMem/DM_103_mux0000<1>111 (DataMem/N1126)
+     LUT4_D:I3->O         63   0.612   1.084  DataMem/DM_103_mux0000<1>11 (DataMem/N6)
+     LUT4:I3->O            1   0.612   0.357  DataMem/DM_39_mux0000<1>_SW0 (N2550)
+     FDS:S                     0.795          DataMem/DM_39_1
     ----------------------------------------
-    Total                     10.537ns (5.239ns logic, 5.298ns route)
-                                       (49.7% logic, 50.3% route)
+    Total                      8.931ns (4.961ns logic, 3.970ns route)
+                                       (55.6% logic, 44.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUWithControl/old_ALUOut_11_not00021'
-  Total number of paths / destination ports: 47136 / 64
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUWithControl/old_ALUOut_1_not00021'
+  Total number of paths / destination ports: 23568 / 32
 -------------------------------------------------------------------------
 Offset:              11.579ns (Levels of Logic = 38)
-  Source:            rt<0> (PAD)
-  Destination:       ALUWithControl/_old_ALUOut_11_28 (LATCH)
-  Destination Clock: ALUWithControl/old_ALUOut_11_not00021 falling
+  Source:            rt<1> (PAD)
+  Destination:       ALUWithControl/_old_ALUOut_1_28 (LATCH)
+  Destination Clock: ALUWithControl/old_ALUOut_1_not00021 falling
 
-  Data Path: rt<0> to ALUWithControl/_old_ALUOut_11_28
+  Data Path: rt<1> to ALUWithControl/_old_ALUOut_1_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            65   1.106   1.082  rt_0_IBUF (rt_0_IBUF)
-     RAM16X1D:DPRA0->DPO    2   0.612   0.449  RegisterFile/Mram_RF_ren3 (N9)
+     IBUF:I->O            65   1.106   1.082  rt_1_IBUF (rt_1_IBUF)
+     RAM16X1D:DPRA1->DPO    2   0.612   0.449  RegisterFile/Mram_RF_ren3 (N9)
      LUT3:I1->O           80   0.612   1.116  inst_LPM_MUX1111 (RegToMux2<1>)
      LUT3:I2->O            4   0.612   0.529  TwoOneMux32/out<1>1 (B<1>)
-     LUT4:I2->O            1   0.612   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<1> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_lut<1>)
-     MUXCY:S->O            1   0.404   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<10>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<11>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<12>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<13>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<14>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<15>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<16>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<17>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<18>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<19>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<20>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<21>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<22>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<23>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<24>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<25>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<26>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<27>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<28>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<29>)
-     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<30>)
-     MUXCY:CI->O           1   0.399   0.387  ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31> (ALUWithControl/Mcompar_old_ALUOut_11_cmp_lt0000_cy<31>)
-     LUT4:I2->O            8   0.612   0.673  ALUWithControl/old_ALUOut_11_mux0001<0>21 (ALUWithControl/N32)
-     LUT4:I2->O            2   0.612   0.000  ALUWithControl/old_ALUOut_11_mux0001<8> (ALUWithControl/old_ALUOut_11_mux0001<8>)
-     LD:D                      0.268          ALUWithControl/_old_ALUOut_11_8
+     LUT4:I2->O            1   0.612   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_lut<1> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<1> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<2> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<3> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<4> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<5> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<6> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<7> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<8> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<9> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<10> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<11> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<12> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<13> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<14> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<15> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<16> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<17> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<18> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<19> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<20> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<21> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<22> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<23> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<24> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<25> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<26> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<27> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<28> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<29> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<30> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<30>)
+     MUXCY:CI->O           1   0.399   0.387  ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<31> (ALUWithControl/Mcompar_old_ALUOut_1_cmp_lt0000_cy<31>)
+     LUT4:I2->O            8   0.612   0.673  ALUWithControl/old_ALUOut_1_mux0001<0>21 (ALUWithControl/N32)
+     LUT4:I2->O            1   0.612   0.000  ALUWithControl/old_ALUOut_1_mux0001<8> (ALUWithControl/old_ALUOut_1_mux0001<8>)
+     LD:D                      0.268          ALUWithControl/_old_ALUOut_1_8
     ----------------------------------------
     Total                     11.579ns (7.343ns logic, 4.236ns route)
                                        (63.4% logic, 36.6% route)
@@ -661,19 +626,19 @@ Offset:              2.637ns (Levels of Logic = 2)
                                        (75.3% logic, 24.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUWithControl/old_ALUOut_11_not00021'
-  Total number of paths / destination ports: 64 / 33
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUWithControl/old_ALUOut_1_not00021'
+  Total number of paths / destination ports: 32 / 1
 -------------------------------------------------------------------------
-Offset:              7.022ns (Levels of Logic = 10)
-  Source:            ALUWithControl/_old_ALUOut_11_7 (LATCH)
+Offset:              7.025ns (Levels of Logic = 10)
+  Source:            ALUWithControl/_old_ALUOut_1_7 (LATCH)
   Destination:       Zero (PAD)
-  Source Clock:      ALUWithControl/old_ALUOut_11_not00021 falling
+  Source Clock:      ALUWithControl/old_ALUOut_1_not00021 falling
 
-  Data Path: ALUWithControl/_old_ALUOut_11_7 to Zero
+  Data Path: ALUWithControl/_old_ALUOut_1_7 to Zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q             331   0.588   1.183  ALUWithControl/_old_ALUOut_11_7 (ALUWithControl/_old_ALUOut_11_7)
+     LD:G->Q             343   0.588   1.186  ALUWithControl/_old_ALUOut_1_7 (ALUWithControl/_old_ALUOut_1_7)
      LUT4:I2->O            1   0.612   0.000  ALUWithControl/Zero_cmp_eq0000_wg_lut<0> (ALUWithControl/Zero_cmp_eq0000_wg_lut<0>)
      MUXCY:S->O            1   0.404   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<0> (ALUWithControl/Zero_cmp_eq0000_wg_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  ALUWithControl/Zero_cmp_eq0000_wg_cy<1> (ALUWithControl/Zero_cmp_eq0000_wg_cy<1>)
@@ -685,20 +650,20 @@ Offset:              7.022ns (Levels of Logic = 10)
      MUXCY:CI->O           1   0.399   0.357  ALUWithControl/Zero_cmp_eq0000_wg_cy<7> (Zero_OBUF)
      OBUF:I->O                 3.169          Zero_OBUF (Zero)
     ----------------------------------------
-    Total                      7.022ns (5.481ns logic, 1.540ns route)
-                                       (78.1% logic, 21.9% route)
+    Total                      7.025ns (5.482ns logic, 1.543ns route)
+                                       (78.0% logic, 22.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 113.00 secs
-Total CPU time to Xst completion: 113.03 secs
+Total REAL time to Xst completion: 118.00 secs
+Total CPU time to Xst completion: 117.27 secs
  
 --> 
 
-Total memory usage is 313220 kilobytes
+Total memory usage is 312260 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   18 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
 Number of infos    :   10 (   0 filtered)
 

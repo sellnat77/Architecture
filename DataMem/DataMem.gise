@@ -47,7 +47,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FullDMRFALU.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FullDMRFALU.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FullDMRFALU.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullDMRFALUTest_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullDMRFALUTest_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FullDMRFALUTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FullDMRFALUTest_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullDMRFALUTest_stx_beh.prj"/>
@@ -66,9 +66,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FullDMRFALU_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FullDataMemTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullDataMemTest_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullRFDMALUTest_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FullRFDMALUTest_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FullRFDMALUTest_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullRFDMALUTest_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SignExtender_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TwoOneMux32_stx_beh.prj"/>
@@ -80,7 +78,6 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -88,20 +85,21 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1424883142" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1424883142">
+    <transform xil_pn:end_ts="1424897253" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1424897253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424884858" xil_pn:in_ck="-2946691409821463573" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1424884858">
+    <transform xil_pn:end_ts="1424897253" xil_pn:in_ck="4846669694734977390" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1424897253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../ALUAndRF/ALUAndRF.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
       <outfile xil_pn:name="../ALUWithControl/ALUWithControl.v"/>
-      <outfile xil_pn:name="../FullALU/FullALU.v"/>
       <outfile xil_pn:name="../RF/RegisterFile.v"/>
       <outfile xil_pn:name="DataMem.v"/>
-      <outfile xil_pn:name="DataMemTest.v"/>
       <outfile xil_pn:name="FullDMRFALU.v"/>
       <outfile xil_pn:name="FullRFDMALUTest.v"/>
       <outfile xil_pn:name="SignExtender.v"/>
@@ -109,21 +107,19 @@
       <outfile xil_pn:name="TwoOneMux321.v"/>
       <outfile xil_pn:name="TwoOneMux5.v"/>
     </transform>
-    <transform xil_pn:end_ts="1424884625" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6108574680319920885" xil_pn:start_ts="1424884625">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1424884625" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4924448198533427593" xil_pn:start_ts="1424884625">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1424883142" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4503316252253125698" xil_pn:start_ts="1424883142">
+    <transform xil_pn:end_ts="1424897253" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9003793929264518453" xil_pn:start_ts="1424897253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424884677" xil_pn:in_ck="-2946691409821463573" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1424884677">
+    <transform xil_pn:end_ts="1424897253" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3452411480409265993" xil_pn:start_ts="1424897253">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1424897253" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4503316252253125698" xil_pn:start_ts="1424897253">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1424897253" xil_pn:in_ck="4846669694734977390" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1424897253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -131,13 +127,10 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../ALUAndRF/ALUAndRF.v"/>
       <outfile xil_pn:name="../ALUControl/ALUControl.v"/>
       <outfile xil_pn:name="../ALUWithControl/ALUWithControl.v"/>
-      <outfile xil_pn:name="../FullALU/FullALU.v"/>
       <outfile xil_pn:name="../RF/RegisterFile.v"/>
       <outfile xil_pn:name="DataMem.v"/>
-      <outfile xil_pn:name="DataMemTest.v"/>
       <outfile xil_pn:name="FullDMRFALU.v"/>
       <outfile xil_pn:name="FullRFDMALUTest.v"/>
       <outfile xil_pn:name="SignExtender.v"/>
@@ -145,32 +138,28 @@
       <outfile xil_pn:name="TwoOneMux321.v"/>
       <outfile xil_pn:name="TwoOneMux5.v"/>
     </transform>
-    <transform xil_pn:end_ts="1424884681" xil_pn:in_ck="-2946691409821463573" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3600873617985546037" xil_pn:start_ts="1424884677">
+    <transform xil_pn:end_ts="1424897257" xil_pn:in_ck="4846669694734977390" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4158840813862483275" xil_pn:start_ts="1424897253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="FullRFDMALUTest_beh.prj"/>
-      <outfile xil_pn:name="FullRFDMALUTest_isim_beh.exe"/>
+      <outfile xil_pn:name="FullDMRFALUTest_beh.prj"/>
+      <outfile xil_pn:name="FullDMRFALUTest_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1424884681" xil_pn:in_ck="7680777664020834533" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9185250730500827822" xil_pn:start_ts="1424884681">
+    <transform xil_pn:end_ts="1424897258" xil_pn:in_ck="-5535671646002520878" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4585690129268649774" xil_pn:start_ts="1424897257">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="FullRFDMALUTest_isim_beh.wdb"/>
+      <outfile xil_pn:name="FullDMRFALUTest_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1424108042" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1424108042">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -200,7 +189,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424882326" xil_pn:in_ck="3918461772494458988" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7382580872104965839" xil_pn:start_ts="1424882210">
+    <transform xil_pn:end_ts="1424894491" xil_pn:in_ck="8070003980724562988" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7382580872104965839" xil_pn:start_ts="1424894371">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -208,6 +197,7 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="FullDMRFALU.lso"/>
       <outfile xil_pn:name="FullDMRFALU.ngc"/>
@@ -216,7 +206,6 @@
       <outfile xil_pn:name="FullDMRFALU.stx"/>
       <outfile xil_pn:name="FullDMRFALU.syr"/>
       <outfile xil_pn:name="FullDMRFALU.xst"/>
-      <outfile xil_pn:name="FullDMRFALUTest_beh.prj"/>
       <outfile xil_pn:name="FullDMRFALUTest_stx_beh.prj"/>
       <outfile xil_pn:name="FullDMRFALU_stx_beh.prj"/>
       <outfile xil_pn:name="FullDMRFALU_xst.xrpt"/>
@@ -231,27 +220,22 @@
     <transform xil_pn:end_ts="1424882332" xil_pn:in_ck="-7150425872628011164" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="314904662398837793" xil_pn:start_ts="1424882326">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="FullDMRFALU.bld"/>
-      <outfile xil_pn:name="FullDMRFALU.ngd"/>
-      <outfile xil_pn:name="FullDMRFALU_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1424882344" xil_pn:in_ck="-7150425872628011163" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1424882332">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="FullDMRFALU.pcf"/>
-      <outfile xil_pn:name="FullDMRFALU_map.map"/>
-      <outfile xil_pn:name="FullDMRFALU_map.mrp"/>
-      <outfile xil_pn:name="FullDMRFALU_map.ncd"/>
-      <outfile xil_pn:name="FullDMRFALU_map.ngm"/>
-      <outfile xil_pn:name="FullDMRFALU_map.xrpt"/>
-      <outfile xil_pn:name="FullDMRFALU_summary.xml"/>
-      <outfile xil_pn:name="FullDMRFALU_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

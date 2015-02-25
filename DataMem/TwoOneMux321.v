@@ -25,5 +25,5 @@ module TwoOneMux32(
     output [31:0] out
     );
 
-	assign out = (sel) ? A:B;
+	assign out = (sel) ? B:A;
 endmodule

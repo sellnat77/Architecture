@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk,Zero,ALUOut);
+module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk,Zero);
 
 	 input Regsel,ALUsel,MemRead,MemToRegSel,RegWrite,clk;
 	 input MemWrite;
@@ -28,11 +28,10 @@ module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,
 	 input [15:0] SEin;
 	 
 	 output Zero;
-	 output wire [31:0] ALUOut;
 	 
-	 wire [3:0] ALUCtl;
+	 wire [3:0] ALUctl;
 	 wire [4:0] WriteReg;
-	 wire [31:0] RegToMux2, A, B, SEOut, ReadDataOut, ReadData;
+	 wire [31:0] RegToMux2, A, B, SEOut, ReadDataOut, ALUOut, ReadData;
 	 
 	TwoOneMux5 TwoOneMux5(.A(rt),.B(rd),.sel(Regsel),.out(WriteReg));
 
@@ -42,9 +41,9 @@ module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,
 	
 	SignExtender SignExtender(.SEin(SEin),.SEout(SEOut));
 	
-	ALUControl ALUControl(.ALUOp(ALUOp),.FuncCode(FuncCode),.ALUctl(ALUCtl));
+	ALUControl ALUControl(.ALUOp(ALUOp),.FuncCode(FuncCode),.ALUctl(ALUctl));
 	
-	ALUWithControl ALUWithControl(.ALUctl(ALUCtl),.A(A),.B(B),.ALUOut(ALUOut),.Zero(Zero));
+	ALUWithControl ALUWithControl(.ALUctl(ALUctl),.A(A),.B(B),.ALUOut(ALUOut),.Zero(Zero));
 	
 	DataMem DataMem(.clk(clk),.Address(ALUOut),.WriteData(RegToMux2),.MemWrite(MemWrite),.MemRead(MemRead),.ReadData(ReadDataOut));
 

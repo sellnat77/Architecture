@@ -29,7 +29,7 @@ module TwoOneMux5(
     input [4:0] B;
     input sel;
     output [4:0] out;	 
-	 assign out = (sel) ? A:B;
+	 assign out = (sel) ? B:A;
 	 
 
 

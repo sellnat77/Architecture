@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest_isim_beh.exe -prj C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest_beh.prj work.FullRFDMALUTest work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Russell/git/Architecture/DataMem/FullDMRFALUTest_isim_beh.exe -prj C:/Users/Russell/git/Architecture/DataMem/FullDMRFALUTest_beh.prj work.FullDMRFALUTest work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -15,7 +15,6 @@ Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v"
 Analyzing Verilog file "C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:329 - "C:/Users/Russell/git/Architecture/DataMem/FullDMRFALU.v" Line 47: Target <ALUOut> of concurrent assignment or output port connection should be a net type.
 Completed static elaboration
 Compiling module TwoOneMux5
 Compiling module RegisterFile
@@ -26,11 +25,11 @@ Compiling module ALUWithControl
 Compiling module DataMem
 Compiling module TwoOneMux321
 Compiling module FullDMRFALU
-Compiling module FullRFDMALUTest
+Compiling module FullDMRFALUTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 11 Verilog Units
-Built simulation executable C:/Users/Russell/git/Architecture/DataMem/FullRFDMALUTest_isim_beh.exe
-Fuse Memory Usage: 30352 KB
-Fuse CPU Usage: 609 ms
+Built simulation executable C:/Users/Russell/git/Architecture/DataMem/FullDMRFALUTest_isim_beh.exe
+Fuse Memory Usage: 30428 KB
+Fuse CPU Usage: 577 ms

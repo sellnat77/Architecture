@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module FullRFDMALUTest;
+module FullDMRFALUTest;
 
 	// Inputs
 	reg [4:0] rs;
@@ -41,7 +41,6 @@ module FullRFDMALUTest;
 
 	// Outputs
 	wire Zero;
-	wire [31:0]ALUOut;
 
 	// Instantiate the Unit Under Test (UUT)
 	FullDMRFALU uut (
@@ -58,8 +57,7 @@ module FullRFDMALUTest;
 		.MemToRegSel(MemToRegSel), 
 		.RegWrite(RegWrite), 
 		.clk(clk), 
-		.Zero(Zero),
-		.ALUOut(ALUOut)
+		.Zero(Zero)
 	);
 	always
 	begin
@@ -89,21 +87,17 @@ module FullRFDMALUTest;
 		// Add stimulus here
 		rs = 0;
 		rt = 0;
-		rd = 5;
+		rd = 0;
 		SEin = 16'h0014;
-		FuncCode = 0;
 		Regsel = 1;
 		ALUsel = 1;
-		ALUOp = 2'b10;
-		MemWrite = 0;
 		MemRead = 1;
-		MemToRegSel = 0;
-		RegWrite = 1;
+		MemToRegSel = 1;
 		
 		#100;
 		rs = 0;
 		rt = 0;
-		rd = 10;
+		rd = 0;
 		SEin = 16'h0028;
 		FuncCode = 0;
 		Regsel = 1;
@@ -111,22 +105,16 @@ module FullRFDMALUTest;
 		ALUOp = 2'b10;
 		MemWrite = 0;
 		MemRead = 1;
-		MemToRegSel = 0;
-		RegWrite = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
 ///////////////////////////////////////////////////
 		#100;
 		rs = 0;
-		rt = 0;
-		rd = 0;
 		SEin = 0;
-		FuncCode = 4'b00000;
 		Regsel =1;
 		ALUsel = 1;
-		ALUOp = 2'b10;
-		MemWrite = 0;
-		MemRead =0;
+		MemRead =1;
 		MemToRegSel = 0;
-		RegWrite = 1;
 			
 
 		#100;
@@ -138,10 +126,10 @@ module FullRFDMALUTest;
 		Regsel = 1;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		MemWrite = 1;
+		MemWrite = 0;
 		MemRead = 1;
 		MemToRegSel = 1;
-		RegWrite = 1;
+		RegWrite = 0;
 			
 
 		#100;
@@ -153,10 +141,10 @@ module FullRFDMALUTest;
 		Regsel = 1;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		MemWrite = 1;
+		MemWrite = 0;
 		MemRead = 1;
 		MemToRegSel = 1;
-		RegWrite = 1;
+		RegWrite = 0;
 	
 
 		#100;
@@ -168,10 +156,10 @@ module FullRFDMALUTest;
 		Regsel = 1;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		MemWrite = 1;
+		MemWrite = 0;
 		MemRead = 1;
 		MemToRegSel = 1;
-		RegWrite = 1;
+		RegWrite = 0;
 		
 
 		#100;
@@ -183,11 +171,112 @@ module FullRFDMALUTest;
 		Regsel = 1;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		MemWrite = 1;
+		MemWrite = 0;
 		MemRead = 1;
 		MemToRegSel = 1;
-		RegWrite = 1;
+		RegWrite = 0;
+
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 16'h0014;
+		FuncCode = 0;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
+		
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 16'h0028;
+		FuncCode = 0;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
+///////////////////////////////////////////////////
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+		FuncCode = 4'b00000;
+		Regsel =1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead =1;
+		MemToRegSel = 0;
+		RegWrite = 0;
 			
+
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+		FuncCode = 4'b0010;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
+			
+
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+		FuncCode = 4'b0100;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
+	
+
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+		FuncCode = 4'b0101;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;
+		
+
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+		FuncCode = 4'b1010;
+		Regsel = 1;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+		MemWrite = 0;
+		MemRead = 1;
+		MemToRegSel = 1;
+		RegWrite = 0;			
 	end
       
 endmodule

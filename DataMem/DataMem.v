@@ -29,6 +29,23 @@ module DataMem(
 	 reg [7:0] DM [0:255];
 	
 	 
+
+	 always @ (posedge clk)
+	 begin		
+		if (MemWrite == 1)
+		begin
+			DM[Address[7:0]+0] = WriteData[31:24];
+			DM[Address[7:0]+1] = WriteData[23:16];
+		  	DM[Address[7:0]+2] = WriteData[15:8];
+			DM[Address[7:0]+3] = WriteData[7:0];	
+		end
+	 end
+	 
+	 always @ (posedge clk)
+	 begin		
+		if (MemRead == 1)
+			ReadData = {DM[Address[7:0] + 0], DM[Address[7:0] + 1], DM[Address[7:0] + 2], DM[Address[7:0] + 3]} ;		
+	 end
 	initial begin
 		DM[0] = 8'h00;	// beginning of 0th word
 		DM[1] = 8'h00;
@@ -50,23 +67,5 @@ module DataMem(
 		DM[43] = 8'haa;
 		//…	// no need as we will not use these locations
 	end	 
-	 always @ (posedge clk)
-	 begin		
-		if (MemWrite == 1)
-			DM[Address[7:0]+0]  <= WriteData[31:24];
-			DM[Address[7:0]+1] <= WriteData[23:16];
-		  	DM[Address[7:0]+2] <= WriteData[15:8];
-			DM[Address[7:0]+3] <= WriteData[7:0];	
-	 end
-	 
-	 always @ (posedge clk)
-	 begin		
-		if (MemRead == 1)
-			ReadData[7:0] = DM[Address[7:0]+0];
-			ReadData[15:8] = DM[Address[7:0]+1];
-		  	ReadData[23:16] = DM[Address[7:0]+2];
-			ReadData[31:24] = DM[Address[7:0]+3];		
-	 end
-
 
 endmodule
