@@ -26,28 +26,27 @@ module FullDataMemTest;
 
 	// Inputs
 	reg clk;
-	reg MemWrite;
-	reg MemRead;
+	reg [31:0]MemWrite;
 	reg RegWrite;
-	reg FuncCode;
-	reg ALUOp;
-	reg SEin;
-	reg A;
-	reg B;
-	reg sel;
+	reg [5:0]FuncCode;
+	reg [1:0]ALUOp;
+	reg [4:0] Read1;
+	reg [4:0] Read2;
+	reg [4:0] WriteReg;
+	
+	wire [31:0] ALUOut;
+	wire Zero;
 
 	// Instantiate the Unit Under Test (UUT)
 	FullDMRFALU uut (
 		.clk(clk), 
 		.MemWrite(MemWrite), 
-		.MemRead(MemRead), 
 		.RegWrite(RegWrite), 
-		.FuncCode(FuncCode), 
-		.ALUOp(ALUOp), 
-		.SEin(SEin), 
-		.A(A), 
-		.B(B), 
-		.sel(sel)
+		.FuncCode(FuncCode),
+		.ALUOp(ALUOp),
+		.Read1(Read1),
+		.Read2(Read2),
+		.WriteReg(WriteReg)
 	);
 	always
 	begin
@@ -58,14 +57,12 @@ module FullDataMemTest;
 		// Initialize Inputs
 		clk = 0;
 		MemWrite = 0;
-		MemRead = 0;
 		RegWrite = 0;
 		FuncCode = 0;
 		ALUOp = 0;
-		SEin = 0;
-		A = 0;
-		B = 0;
-		sel = 0;
+		Read1 = 0;
+		Read2 = 0;
+
 		
 
 		// Wait 100 ns for global reset to finish
@@ -74,44 +71,33 @@ module FullDataMemTest;
 		// Add stimulus here
 		#100;
 		MemWrite = 1;
-		MemRead = 0;
+
 		RegWrite = 20;
 		FuncCode = 4'b0000;
 		ALUOp = 2;
-		SEin = 16'b0000000000000000;
-		A = 50;
-		B = 10;
-		sel = 1;
+
+
 		#100;
 		MemWrite = 0;
-		MemRead = 0;
+	
 		RegWrite = 0;
 		FuncCode = 0;
 		ALUOp = 0;
-		SEin = 0;
-		A = 0;
-		B = 0;
-		sel = 0;
+
 		#100;
 		MemWrite = 0;
-		MemRead = 0;
+	
 		RegWrite = 0;
 		FuncCode = 0;
 		ALUOp = 0;
-		SEin = 0;
-		A = 0;
-		B = 0;
-		sel = 0;
+
 		#100;
 		MemWrite = 0;
-		MemRead = 0;
+		
 		RegWrite = 0;
 		FuncCode = 0;
 		ALUOp = 0;
-		SEin = 0;
-		A = 0;
-		B = 0;
-		sel = 0;
+
 	end
       
 endmodule

@@ -18,39 +18,29 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module FullDMRFALU(
-	 input clk,
-    input MemWrite,
-    input MemRead,
-    input RegWrite,
-    input FuncCode,
-    input ALUOp,
-	 input SEin,
-	 input A,
-	 input B,
-	 input sel
-    );
+module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk,Zero);
+	 input Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk;
+	 input [5:0] FuncCode;
+	 input [4:0] rs,rt,rd;
+	 input [15:0] SEin;
 	 
-	 wire ALUResultWire;
-	 wire ReadData2Wire;
-	 wire ReadData1Wire;
-	 wire ReadDataWire;
-	 wire WriteRegWire;
-	 wire WriteDataWire;
-	 wire ZeroWire;
-	 wire SExtendWire;
+	 output Zero;
+	 
+	 wire [3:0] ALUCtl;
+	 wire [4:0] WriteReg;
+	 wire [31:0] RegToMux2, A,B,SEOut,ALUOut,ReadDataOut,ReadData;
 	 
 
-	DataMem DataMem(clk,ALUResultWire,ReadData2Wire,MemWrite,MemRead,ReadDataWire);
+	DataMem DataMem(.clk(clk),.Address(ALUResultWire),.WriteData(ReadData2Wire),.MemWrite(MemWrite),.MemRead(MemRead),.ReadData(ReadDataOut));
 	 
-	ALUAndRF ALUAndRF(clk,ReadData1Wire,ReadData2Wire,WriteRegWire,RegWrite,WriteDataWire,FuncCode,ALUOp,ALUResultWire,ZeroWire);
+	ALUAndRF ALUAndRF(.clk(clk),.Read1(rs),.Read2(rt),.WriteReg(WriteReg),.RegWrite(RegWrite),.WriteData(ReadData),.FuncCode(FuncCode),.ALUOp(ALUOp),.Zero(Zero),.ALUOut(ALUOut));
 
-	SignExtender SignExtender(SEin,SExtendWire);
+	SignExtender SignExtender(.SEin(SEin),.SEout(SEOut));
 	
-	TwoOneMux32 TwoOneMux32(ReadData2Wire,SExtendWire,sel,ReadData2Wire);
+	TwoOneMux32 TwoOneMux32(.A(RegToMux2),.B(SEOut),.sel(ALUsel),.out(B));
 	
-	TwoOneMux321 TwoOneMux321(A,B,sel,WriteRegWire);
+	TwoOneMux321 TwoOneMux321(.A(ALUOut),.B(ReadDataOut),.sel(MemToReg),.out(ReadData));
 	
-	TwoOneMux5 TwoOneMux5(ReadDataWire,ALUResultWire,sel,WriteDataWire);
+	TwoOneMux5 TwoOneMux5(.A(rt),.B(rd),.sel(RegSel),.out(WriteReg));
 
 endmodule
