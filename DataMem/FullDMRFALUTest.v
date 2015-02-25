@@ -41,7 +41,6 @@ module FullDMRFALUTest;
 
 	// Outputs
 	wire Zero;
-	wire[31:0] ALUOut;
 
 	// Instantiate the Unit Under Test (UUT)
 	FullDMRFALU uut (
@@ -84,19 +83,42 @@ module FullDMRFALUTest;
 	
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#50;
         
 		// Add stimulus here
 		
 		SEin = 16'h0014;
-		rs = 0;
-		rt = 0;
+		rs = 32'h55555555;
+		rt = 32'h55555555;
 		ALUsel = 1;
 		ALUOp = 2'b10;
-		FuncCode = 6'b000000;
+		FuncCode = 4'b0010;
 		RegWrite = 1;
 		MemWrite = 32'h55555555;
 		
+		#100;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		SEin = 0;
+			FuncCode = 4'b0010;
+		Regsel = 0;
+		ALUsel = 0;
+		ALUOp = 0;
+		MemWrite = 0;
+		MemRead = 0;
+		MemToRegSel = 0;
+		RegWrite = 0;
+		
+		#100;
+		SEin = 16'h0014;
+		rs = 32'h55555555;
+		rt = 32'h55555555;
+		ALUsel = 1;
+		ALUOp = 2'b10;
+			FuncCode = 4'b0010;
+		RegWrite = 1;
+		MemWrite = 32'h55555555;		
 
 	end
       

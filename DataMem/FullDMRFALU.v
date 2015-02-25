@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk,Zero);
+
 	 input Regsel,ALUsel,ALUOp,MemWrite,MemRead,MemToRegSel,RegWrite,clk;
 	 input [5:0] FuncCode;
 	 input [4:0] rs,rt,rd;
@@ -28,7 +29,7 @@ module FullDMRFALU( rs,rt,rd,SEin,FuncCode,Regsel,ALUsel,ALUOp,MemWrite,MemRead,
 	 
 	 wire [3:0] ALUCtl;
 	 wire [4:0] WriteReg;
-	 wire [31:0] RegToMux2, A,B,SEOut,ALUOut,ReadDataOut,ReadData;
+	 wire [31:0] RegToMux2, A, B, SEOut, ALUOut, ReadDataOut, ReadData;
 	 
 
 	DataMem DataMem(.clk(clk),.Address(ALUResultWire),.WriteData(ReadData2Wire),.MemWrite(MemWrite),.MemRead(MemRead),.ReadData(ReadDataOut));

@@ -2,9 +2,9 @@ Command line:
    FullDMRFALUTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58601
+     -socket  65249
 
-Tue Feb 24 21:10:27 2015
+Tue Feb 24 21:27:55 2015
 
 
- Elaboration Time: 0.0624 sec
+ Elaboration Time: 0.0468 sec
