@@ -5,40 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 34 </arg>Connection to input port &apos;<arg fmt="%s" index="2">Address</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 38 </arg>Connection to input port &apos;<arg fmt="%s" index="2">Address</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 34 </arg>Connection to input port &apos;<arg fmt="%s" index="2">WriteData</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 38 </arg>Connection to input port &apos;<arg fmt="%s" index="2">WriteData</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 34 </arg>Connection to input port &apos;<arg fmt="%s" index="2">MemWrite</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 38 </arg>Connection to input port &apos;<arg fmt="%s" index="2">MemRead</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 34 </arg>Connection to input port &apos;<arg fmt="%s" index="2">MemRead</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 42 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 38 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 44 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 40 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 46 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 42 </arg>Connection to input port &apos;<arg fmt="%s" index="2">sel</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 48 </arg>Connection to input port &apos;<arg fmt="%s" index="2">FuncCode</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 44 </arg>Connection to input port &apos;<arg fmt="%s" index="2">ALUOp</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 50 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Zero</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 44 </arg>Connection to input port &apos;<arg fmt="%s" index="2">FuncCode</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 46 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Zero</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 48 </arg>Connection to input port &apos;<arg fmt="%s" index="2">RegWrite</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">FullDMRFALU.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Name conflict (<arg fmt="%s" index="3">&lt;RegSel&gt; and &lt;Regsel&gt;, renaming RegSel as regsel_rnm0</arg>).
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;FullDMRFALU.v&quot; line 52 </arg>Connection to input port &apos;<arg fmt="%s" index="2">RegWrite</arg>&apos; does not match port size
 </msg>
 
 <msg type="warning" file="Xst" num="2319" delta="old" >&quot;<arg fmt="%s" index="1">DataMem.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>: Signal <arg fmt="%s" index="3">DM</arg> in initial block is partially initialized. The initialization will be ignored.
@@ -78,22 +69,10 @@
 <msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Regsel</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">MemToRegSel</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">FuncCode&lt;5:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">regsel_rnm0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
-</msg>
-
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ReadData2Wire</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">MemToReg</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ALUResultWire</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
@@ -12400,378 +12379,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ReadData_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">DataMem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren1</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren5</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren9</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren7</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren11</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren15</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren13</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren17</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren21</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren19</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren23</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren25</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren27</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren31</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren29</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren33</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren37</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren35</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren39</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren43</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren41</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren45</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren47</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren49</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren53</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren51</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren55</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren59</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren57</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren61</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren3</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren63</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren6</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren4</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren8</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren12</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren10</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren14</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren18</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren16</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren20</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren22</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren24</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren28</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren26</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren30</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren34</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren32</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren36</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren40</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren38</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren42</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren46</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren44</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren48</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren50</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren52</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren56</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren54</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren58</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren62</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren60</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF_ren2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF_ren64</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF5</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF3</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF7</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF11</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF9</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF13</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF17</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF15</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF19</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF23</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF21</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF25</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF29</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF27</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF31</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF35</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF33</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF37</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF41</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF39</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF43</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF47</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF45</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF49</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF51</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF53</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF57</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF55</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF59</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF63</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF1</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF61</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF4</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF8</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF6</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF10</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF14</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF12</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF16</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF20</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF18</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF22</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF26</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF24</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF28</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF32</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF30</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF34</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF38</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF36</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF40</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF44</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF42</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF46</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF48</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF50</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF54</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF52</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF56</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF60</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF58</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF62</arg>&gt; are equivalent, second RAM is removed
-</msg>
-
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">RegisterFile/Mram_RF2</arg>&gt;, &lt;<arg fmt="%s" index="2">RegisterFile/Mram_RF64</arg>&gt; are equivalent, second RAM is removed
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
