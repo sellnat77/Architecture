@@ -19,9 +19,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module IM(
-    input [7:0] PCOut,
+    input [7:0] Address,
     output InstructionOut
     );
+	 
+	 reg [31:0] instructionMemory [255:0];
+	 
+	 assign InstructionOut = instructionMemory[Address[9:2]];
+	 
 
 
 endmodule
