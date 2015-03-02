@@ -23,8 +23,14 @@
 #endif
 static const char *ng0 = "C:/Users/Russell/git/Architecture/PCIMID/IMTest.v";
 static int ng1[] = {0, 0};
-static int ng2[] = {5, 0};
-static int ng3[] = {10, 0};
+static int ng2[] = {20, 0};
+static int ng3[] = {21, 0};
+static int ng4[] = {22, 0};
+static int ng5[] = {23, 0};
+static int ng6[] = {24, 0};
+static int ng7[] = {25, 0};
+static int ng8[] = {26, 0};
+static int ng9[] = {27, 0};
 
 
 
@@ -54,7 +60,7 @@ LAB4:    xsi_set_current_line(41, ng0);
 
 LAB1:    return;
 LAB5:    xsi_set_current_line(45, ng0);
-    t2 = ((char*)((ng1)));
+    t2 = ((char*)((ng2)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
     xsi_set_current_line(46, ng0);
@@ -64,7 +70,7 @@ LAB5:    xsi_set_current_line(45, ng0);
     goto LAB1;
 
 LAB6:    xsi_set_current_line(47, ng0);
-    t2 = ((char*)((ng2)));
+    t2 = ((char*)((ng3)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
     xsi_set_current_line(48, ng0);
@@ -74,7 +80,7 @@ LAB6:    xsi_set_current_line(47, ng0);
     goto LAB1;
 
 LAB7:    xsi_set_current_line(49, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng4)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
     xsi_set_current_line(50, ng0);
@@ -84,7 +90,47 @@ LAB7:    xsi_set_current_line(49, ng0);
     goto LAB1;
 
 LAB8:    xsi_set_current_line(51, ng0);
-    t2 = ((char*)((ng2)));
+    t2 = ((char*)((ng5)));
+    t3 = (t0 + 1448);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
+    xsi_set_current_line(52, ng0);
+    t2 = (t0 + 2176);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB9;
+    goto LAB1;
+
+LAB9:    xsi_set_current_line(53, ng0);
+    t2 = ((char*)((ng6)));
+    t3 = (t0 + 1448);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
+    xsi_set_current_line(54, ng0);
+    t2 = (t0 + 2176);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB10;
+    goto LAB1;
+
+LAB10:    xsi_set_current_line(55, ng0);
+    t2 = ((char*)((ng7)));
+    t3 = (t0 + 1448);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
+    xsi_set_current_line(56, ng0);
+    t2 = (t0 + 2176);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB11;
+    goto LAB1;
+
+LAB11:    xsi_set_current_line(57, ng0);
+    t2 = ((char*)((ng8)));
+    t3 = (t0 + 1448);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
+    xsi_set_current_line(58, ng0);
+    t2 = (t0 + 2176);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB12;
+    goto LAB1;
+
+LAB12:    xsi_set_current_line(59, ng0);
+    t2 = ((char*)((ng9)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
     goto LAB1;
