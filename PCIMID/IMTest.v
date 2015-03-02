@@ -42,21 +42,21 @@ module IMTest;
 
 		// Wait 100 ns for global reset to finish
 		#100;
+      Address = 4;
+		#100;
+      Address = 8;
+		#100;
+      Address = 12;
+		#100;
+      Address = 16;
+		#100;
       Address = 20;
-		#100;
-      Address = 21;
-		#100;
-      Address = 22;
-		#100;
-      Address = 23;
 		#100;
       Address = 24;
 		#100;
-      Address = 25;
+      Address = 28;
 		#100;
-      Address = 26;
-		#100;
-      Address = 27;		
+      Address = 32;		
 		// Add stimulus here
 
 	end

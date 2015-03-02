@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Russell/git/Architecture/PCIMID/IMTest_isim_beh.exe" -prj "C:/Users/Russell/git/Architecture/PCIMID/IMTest_beh.prj" "work.IMTest" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Russell/git/Architecture/PCIMID/PCAndIMTest_isim_beh.exe" -prj "C:/Users/Russell/git/Architecture/PCIMID/PCAndIMTest_beh.prj" "work.PCAndIMTest" "work.glbl" 
