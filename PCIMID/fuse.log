@@ -16,8 +16,7 @@ Compiling module PCAndIM
 Compiling module PCAndIMTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 Verilog Units
 Built simulation executable C:/Users/Russell/git/Architecture/PCIMID/PCAndIMTest_isim_beh.exe
-Fuse Memory Usage: 29280 KB
-Fuse CPU Usage: 562 ms
+Fuse Memory Usage: 29324 KB
+Fuse CPU Usage: 577 ms
