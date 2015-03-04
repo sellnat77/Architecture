@@ -5,29 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="661" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 22: Non-net port <arg fmt="%s" index="1">instructionIn</arg> cannot be of mode <arg fmt="%s" index="2">input</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 26: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 27: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 28: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 29: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 30: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 31: <arg fmt="%s" index="1">instructionIn</arg> is not a constant
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/Russell/git/Architecture/PCIMID/ID.v" Line 21: Module &lt;<arg fmt="%s" index="1">ID</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 

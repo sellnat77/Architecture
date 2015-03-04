@@ -44,7 +44,24 @@ module IDTest;
 		#100;
         
 		// Add stimulus here
-
+		
+		instructionIn = {6'h23, 5'd0, 5'd05,16'd20}; //load
+		#100;
+		instructionIn = {6'h23, 5'd0, 5'd10,16'd20}; //load
+		#100;
+		instructionIn  ={6'h00,5'd5,5'd10,5'd11,5'd0,6'h20}; //add
+		#100;
+		instructionIn ={6'h00,5'd5,5'd10,5'd11,5'd0,6'h22}; //sub
+		#100;
+		instructionIn ={6'h00,5'd5,5'd10,5'd11,5'd0,6'h24}; //and
+		#100;
+		instructionIn ={6'h00,5'd5,5'd10,5'd11,5'd0,6'h25}; //or
+		#100;
+		instructionIn ={6'h00,5'd5,5'd10,5'd11,5'd0,6'h2a}; //setl
+		#100;
+		instructionIn ={6'h2b,5'd0,5'd11,16'd00};// store
+		#100;
+		instructionIn ={6'h2b,5'd0,5'd11,16'd00};// store
 	end
       
 endmodule
