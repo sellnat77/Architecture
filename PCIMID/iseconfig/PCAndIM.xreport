@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-02T16:29:14</DateModified>
+  <DateModified>2015-03-03T20:16:00</DateModified>
   <ModuleName>PCAndIM</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Russell/git/Architecture/PCIMID/iseconfig/PCAndIM.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/PCIMID</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Russell/git/Architecture/PCIMID\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-02T16:29:14</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
